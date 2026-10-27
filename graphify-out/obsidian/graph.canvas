@@ -1,0 +1,809 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Core Architecture, PRD & Persistence",
+      "x": 0,
+      "y": 0,
+      "width": 880,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_contract_database_schema",
+      "type": "file",
+      "file": "Contract PostgreSQL 16 Schema, ERD & JSONB Specs (database-schema.md).md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_contract_rest_api",
+      "type": "file",
+      "file": "Contract REST API Endpoints & TypeScriptPydantic DTO Parity (rest-api-contract.md).md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_frontend_mock_simulator_harness",
+      "type": "file",
+      "file": "Frontend Standalone MockSimulator Harness (Synthetic 24kHz Voice & WS Events).md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_arch_workflow_blueprint",
+      "type": "file",
+      "file": "Master Architecture & 4-Phase Contract-First Workflow (ARCHITECTURE_AND_WORKFLOW.md).md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_phase1_contracts",
+      "type": "file",
+      "file": "Plan Phase 1 Master Workflow & Complete Data Contracts.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_db_table_candidates",
+      "type": "file",
+      "file": "Table candidates (cv_raw_text & cv_structured_summary JSONB).md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_db_table_evaluation_reports",
+      "type": "file",
+      "file": "Table evaluation_reports (overall_weighted_score & competency_scores JSONB).md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_db_table_interview_sessions",
+      "type": "file",
+      "file": "Table interview_sessions (status, current_stage, ephemeral_token_jti).md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_db_table_interview_transcripts",
+      "type": "file",
+      "file": "Table interview_transcripts (turn_seq, turn_id, speaker, stage_id).md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_db_table_job_positions",
+      "type": "file",
+      "file": "Table job_positions (rubric_config JSONB).md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "PostgreSQL Database Schema & Tables",
+      "x": 960,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_adr_002",
+      "type": "file",
+      "file": "ADR-002 FastAPI Async Stack & Hybrid WebSocket Framing.md",
+      "x": 980,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd_rest_api",
+      "type": "file",
+      "file": "Backend REST API (apiv1sessions & report).md",
+      "x": 1180,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd_master_doc",
+      "type": "file",
+      "file": "PRD.md Product Requirements & System Specification.md",
+      "x": 1380,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_prd_contracts",
+      "type": "file",
+      "file": "Plan Comprehensive PRD, ADR-002 & Contracts.md",
+      "x": 980,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd_eval_worker",
+      "type": "file",
+      "file": "Post-Interview Competency Evaluation Worker (Gemini 2.5 Pro).md",
+      "x": 1180,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_adr_002_postgres_jsonb",
+      "type": "file",
+      "file": "PostgreSQL 16 (asyncpg + JSONB Transcripts & Reports).md",
+      "x": 1380,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_req_platform",
+      "type": "file",
+      "file": "Real-Time AI Interviewer Platform.md",
+      "x": 980,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd_resilience_reconnect",
+      "type": "file",
+      "file": "Session Resumption, Silence Watchdog & Adaptive Quality Governor.md",
+      "x": 1180,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "WebSocket, Audio & REST Contracts",
+      "x": 1700,
+      "y": 0,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_contract_ws_protocol",
+      "type": "file",
+      "file": "Contract Hybrid WebSocket Protocol (websocket-protocol.md).md",
+      "x": 1720,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_contract_vrm_states",
+      "type": "file",
+      "file": "Contract VRM Avatar State Machine & Lerp Formula (vrm-avatar-states.md).md",
+      "x": 1920,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd_frontend_state_machine",
+      "type": "file",
+      "file": "Frontend Interview Room & Lobby State Machine.md",
+      "x": 2120,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_req_barge_in",
+      "type": "file",
+      "file": "Natural Interruption (Barge-In Handling).md",
+      "x": 1720,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_contracts_index",
+      "type": "file",
+      "file": "WebSocket & Audio System Contracts Index.md",
+      "x": 1920,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "3D VRM Avatar & Lip-Sync Engine",
+      "x": 0,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_agents_rules",
+      "type": "file",
+      "file": "AGENTS.md Workspace Rules & Guardrails.md",
+      "x": 20,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_skill_graphify",
+      "type": "file",
+      "file": "Graphify Knowledge Graph Skill.md",
+      "x": 220,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_skill_plan_track",
+      "type": "file",
+      "file": "Plan-and-Track Skill SOP.md",
+      "x": 20,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_state_tracker",
+      "type": "file",
+      "file": "STATE.md Project Tracker.md",
+      "x": 220,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Engineering Workflow & Governance",
+      "x": 960,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_req_analyser_lipsync",
+      "type": "file",
+      "file": "AudioContext & AnalyserNode Real-Time Lip-Sync.md",
+      "x": 980,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_req_audioworklet",
+      "type": "file",
+      "file": "Browser AudioWorklet Input (PCM 16kHz Mono).md",
+      "x": 1180,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_contract_audio_spec",
+      "type": "file",
+      "file": "Contract Audio Pipeline & Formant Lip-Sync Spec (audio-pipeline-spec.md).md",
+      "x": 980,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd_pcm_player",
+      "type": "file",
+      "file": "PcmStreamPlayer (24kHz Gapless AudioBuffer Queue).md",
+      "x": 1180,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Evaluation & Session Management",
+      "x": 1700,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_req_vrm_avatar",
+      "type": "file",
+      "file": "3D VRM Client-Side Avatar (Three.js + @pixivthree-vrm).md",
+      "x": 1720,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_adr_001",
+      "type": "file",
+      "file": "ADR-001 Core Architecture Decision.md",
+      "x": 1920,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_req_viseme_blendshapes",
+      "type": "file",
+      "file": "VRM Blendshapes & Visemes (aa, ih, ou, ee, oh).md",
+      "x": 1720,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Architecture Cluster 6",
+      "x": 0,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_req_gcp_deployment",
+      "type": "file",
+      "file": "GCP Containerized Deployment (Cloud Run  GKE).md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd_stage_controller",
+      "type": "file",
+      "file": "Interview Stage Progression & Timekeeper Controller.md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_req_backend_relay",
+      "type": "file",
+      "file": "Lightweight Backend WebSocket Relay (FastAPI  uvloop).md",
+      "x": 20,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Architecture Cluster 7",
+      "x": 960,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_prd_prompt_injector",
+      "type": "file",
+      "file": "Dynamic Context & System Prompt Injector (JD + CV + Rubric).md",
+      "x": 980,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_req_gemini_live_api",
+      "type": "file",
+      "file": "Gemini Multimodal Live API (WSS Voice-to-Voice).md",
+      "x": 1180,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_adr_002_adr_002_postgres_jsonb",
+      "fromNode": "n_adr_002",
+      "toNode": "n_adr_002_postgres_jsonb",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_req_backend_relay",
+      "fromNode": "n_adr_002",
+      "toNode": "n_req_backend_relay",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_adr_001",
+      "fromNode": "n_adr_002",
+      "toNode": "n_adr_001",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_contract_ws_protocol",
+      "fromNode": "n_adr_002",
+      "toNode": "n_contract_ws_protocol",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_plan_prd_contracts",
+      "fromNode": "n_adr_002",
+      "toNode": "n_plan_prd_contracts",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_prd_master_doc",
+      "fromNode": "n_adr_002",
+      "toNode": "n_prd_master_doc",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_postgres_jsonb_prd_rest_api",
+      "fromNode": "n_adr_002_postgres_jsonb",
+      "toNode": "n_prd_rest_api",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_postgres_jsonb_prd_eval_worker",
+      "fromNode": "n_adr_002_postgres_jsonb",
+      "toNode": "n_prd_eval_worker",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_002_postgres_jsonb_prd_resilience_reconnect",
+      "fromNode": "n_adr_002_postgres_jsonb",
+      "toNode": "n_prd_resilience_reconnect",
+      "label": "shares_data_with [INFERRED]"
+    },
+    {
+      "id": "e_plan_prd_contracts_contracts_index",
+      "fromNode": "n_plan_prd_contracts",
+      "toNode": "n_contracts_index",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_prd_contracts_prd_master_doc",
+      "fromNode": "n_plan_prd_contracts",
+      "toNode": "n_prd_master_doc",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_prd_contracts_skill_plan_track",
+      "fromNode": "n_plan_prd_contracts",
+      "toNode": "n_skill_plan_track",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_eval_worker_prd_master_doc",
+      "fromNode": "n_prd_eval_worker",
+      "toNode": "n_prd_master_doc",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_prd_frontend_state_machine",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_prd_frontend_state_machine",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_prd_pcm_player",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_prd_pcm_player",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_prd_prompt_injector",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_prd_prompt_injector",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_prd_resilience_reconnect",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_prd_resilience_reconnect",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_prd_rest_api",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_prd_rest_api",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_prd_stage_controller",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_prd_stage_controller",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_req_platform",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_req_platform",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_master_doc_adr_001",
+      "fromNode": "n_prd_master_doc",
+      "toNode": "n_adr_001",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_001_req_backend_relay",
+      "fromNode": "n_adr_001",
+      "toNode": "n_req_backend_relay",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_001_req_gemini_live_api",
+      "fromNode": "n_adr_001",
+      "toNode": "n_req_gemini_live_api",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_adr_001_req_vrm_avatar",
+      "fromNode": "n_adr_001",
+      "toNode": "n_req_vrm_avatar",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_pcm_player_req_barge_in",
+      "fromNode": "n_prd_pcm_player",
+      "toNode": "n_req_barge_in",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_pcm_player_req_analyser_lipsync",
+      "fromNode": "n_prd_pcm_player",
+      "toNode": "n_req_analyser_lipsync",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_pcm_player_req_gemini_live_api",
+      "fromNode": "n_prd_pcm_player",
+      "toNode": "n_req_gemini_live_api",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_prompt_injector_req_gemini_live_api",
+      "fromNode": "n_prd_prompt_injector",
+      "toNode": "n_req_gemini_live_api",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_req_analyser_lipsync_req_viseme_blendshapes",
+      "fromNode": "n_req_analyser_lipsync",
+      "toNode": "n_req_viseme_blendshapes",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_req_analyser_lipsync_contract_audio_spec",
+      "fromNode": "n_req_analyser_lipsync",
+      "toNode": "n_contract_audio_spec",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_req_gemini_live_api_req_backend_relay",
+      "fromNode": "n_req_gemini_live_api",
+      "toNode": "n_req_backend_relay",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_req_gemini_live_api_req_barge_in",
+      "fromNode": "n_req_gemini_live_api",
+      "toNode": "n_req_barge_in",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_req_viseme_blendshapes_req_vrm_avatar",
+      "fromNode": "n_req_viseme_blendshapes",
+      "toNode": "n_req_vrm_avatar",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_req_vrm_avatar_contract_vrm_states",
+      "fromNode": "n_req_vrm_avatar",
+      "toNode": "n_contract_vrm_states",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_audio_spec_req_audioworklet",
+      "fromNode": "n_contract_audio_spec",
+      "toNode": "n_req_audioworklet",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_audio_spec_contracts_index",
+      "fromNode": "n_contract_audio_spec",
+      "toNode": "n_contracts_index",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_stage_controller_req_backend_relay",
+      "fromNode": "n_prd_stage_controller",
+      "toNode": "n_req_backend_relay",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_req_audioworklet_req_backend_relay",
+      "fromNode": "n_req_audioworklet",
+      "toNode": "n_req_backend_relay",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_req_backend_relay_contract_ws_protocol",
+      "fromNode": "n_req_backend_relay",
+      "toNode": "n_contract_ws_protocol",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_req_backend_relay_req_gcp_deployment",
+      "fromNode": "n_req_backend_relay",
+      "toNode": "n_req_gcp_deployment",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_vrm_states_req_barge_in",
+      "fromNode": "n_contract_vrm_states",
+      "toNode": "n_req_barge_in",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_vrm_states_prd_frontend_state_machine",
+      "fromNode": "n_contract_vrm_states",
+      "toNode": "n_prd_frontend_state_machine",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_vrm_states_contracts_index",
+      "fromNode": "n_contract_vrm_states",
+      "toNode": "n_contracts_index",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_ws_protocol_contracts_index",
+      "fromNode": "n_contract_ws_protocol",
+      "toNode": "n_contracts_index",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_ws_protocol_prd_frontend_state_machine",
+      "fromNode": "n_contract_ws_protocol",
+      "toNode": "n_prd_frontend_state_machine",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_rules_skill_graphify",
+      "fromNode": "n_agents_rules",
+      "toNode": "n_skill_graphify",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_rules_skill_plan_track",
+      "fromNode": "n_agents_rules",
+      "toNode": "n_skill_plan_track",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_skill_plan_track_state_tracker",
+      "fromNode": "n_skill_plan_track",
+      "toNode": "n_state_tracker",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_arch_workflow_blueprint_frontend_mock_simulator_harness",
+      "fromNode": "n_arch_workflow_blueprint",
+      "toNode": "n_frontend_mock_simulator_harness",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_phase1_contracts_arch_workflow_blueprint",
+      "fromNode": "n_plan_phase1_contracts",
+      "toNode": "n_arch_workflow_blueprint",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_phase1_contracts_contract_database_schema",
+      "fromNode": "n_plan_phase1_contracts",
+      "toNode": "n_contract_database_schema",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_phase1_contracts_contract_rest_api",
+      "fromNode": "n_plan_phase1_contracts",
+      "toNode": "n_contract_rest_api",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_database_schema_db_table_candidates",
+      "fromNode": "n_contract_database_schema",
+      "toNode": "n_db_table_candidates",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_database_schema_db_table_evaluation_reports",
+      "fromNode": "n_contract_database_schema",
+      "toNode": "n_db_table_evaluation_reports",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_database_schema_db_table_interview_sessions",
+      "fromNode": "n_contract_database_schema",
+      "toNode": "n_db_table_interview_sessions",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_database_schema_db_table_interview_transcripts",
+      "fromNode": "n_contract_database_schema",
+      "toNode": "n_db_table_interview_transcripts",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_database_schema_db_table_job_positions",
+      "fromNode": "n_contract_database_schema",
+      "toNode": "n_db_table_job_positions",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_contract_rest_api_contract_database_schema",
+      "fromNode": "n_contract_rest_api",
+      "toNode": "n_contract_database_schema",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_db_table_interview_sessions_db_table_job_positions",
+      "fromNode": "n_db_table_interview_sessions",
+      "toNode": "n_db_table_job_positions",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_db_table_interview_sessions_db_table_candidates",
+      "fromNode": "n_db_table_interview_sessions",
+      "toNode": "n_db_table_candidates",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_db_table_evaluation_reports_db_table_interview_sessions",
+      "fromNode": "n_db_table_evaluation_reports",
+      "toNode": "n_db_table_interview_sessions",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_db_table_interview_transcripts_db_table_interview_sessions",
+      "fromNode": "n_db_table_interview_transcripts",
+      "toNode": "n_db_table_interview_sessions",
+      "label": "references [EXTRACTED]"
+    }
+  ]
+}

@@ -1,0 +1,962 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "schema_version": 1,
+    "graphify_version": "0.9.84"
+  },
+  "nodes": [
+    {
+      "id": "arch_workflow_blueprint",
+      "label": "Master Architecture & 4-Phase Contract-First Workflow (ARCHITECTURE_AND_WORKFLOW.md)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "master architecture & 4-phase contract-first workflow (architecture_and_workflow.md)",
+      "source_file": "docs/ARCHITECTURE_AND_WORKFLOW.md",
+      "source_location": "L1-L260",
+      "source_url": null
+    },
+    {
+      "id": "contract_database_schema",
+      "label": "Contract: PostgreSQL 16 Schema, ERD & JSONB Specs (database-schema.md)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "contract: postgresql 16 schema, erd & jsonb specs (database-schema.md)",
+      "source_file": "docs/contracts/database-schema.md",
+      "source_location": "L1-L420",
+      "source_url": null
+    },
+    {
+      "id": "contract_rest_api",
+      "label": "Contract: REST API Endpoints & TypeScript/Pydantic DTO Parity (rest-api-contract.md)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "contract: rest api endpoints & typescript/pydantic dto parity (rest-api-contract.md)",
+      "source_file": "docs/contracts/rest-api-contract.md",
+      "source_location": "L1-L480",
+      "source_url": null
+    },
+    {
+      "id": "db_table_candidates",
+      "label": "Table: candidates (cv_raw_text & cv_structured_summary JSONB)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "table: candidates (cv_raw_text & cv_structured_summary jsonb)",
+      "source_file": "docs/contracts/database-schema.md",
+      "source_location": "L137-L156",
+      "source_url": null
+    },
+    {
+      "id": "db_table_evaluation_reports",
+      "label": "Table: evaluation_reports (overall_weighted_score & competency_scores JSONB)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "table: evaluation_reports (overall_weighted_score & competency_scores jsonb)",
+      "source_file": "docs/contracts/database-schema.md",
+      "source_location": "L218-L248",
+      "source_url": null
+    },
+    {
+      "id": "db_table_interview_sessions",
+      "label": "Table: interview_sessions (status, current_stage, ephemeral_token_jti)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "table: interview_sessions (status, current_stage, ephemeral_token_jti)",
+      "source_file": "docs/contracts/database-schema.md",
+      "source_location": "L158-L190",
+      "source_url": null
+    },
+    {
+      "id": "db_table_interview_transcripts",
+      "label": "Table: interview_transcripts (turn_seq, turn_id, speaker, stage_id)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "table: interview_transcripts (turn_seq, turn_id, speaker, stage_id)",
+      "source_file": "docs/contracts/database-schema.md",
+      "source_location": "L192-L216",
+      "source_url": null
+    },
+    {
+      "id": "db_table_job_positions",
+      "label": "Table: job_positions (rubric_config JSONB)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "table: job_positions (rubric_config jsonb)",
+      "source_file": "docs/contracts/database-schema.md",
+      "source_location": "L115-L135",
+      "source_url": null
+    },
+    {
+      "id": "frontend_mock_simulator_harness",
+      "label": "Frontend Standalone Mock/Simulator Harness (Synthetic 24kHz Voice & WS Events)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "frontend standalone mock/simulator harness (synthetic 24khz voice & ws events)",
+      "source_file": "docs/ARCHITECTURE_AND_WORKFLOW.md",
+      "source_location": "L130-L165",
+      "source_url": null
+    },
+    {
+      "id": "plan_phase1_contracts",
+      "label": "Plan: Phase 1 Master Workflow & Complete Data Contracts",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "plan: phase 1 master workflow & complete data contracts",
+      "source_file": "docs/plans/2026-10-26-phase-1-master-workflow-and-data-contracts.md",
+      "source_location": "L1-L95",
+      "source_url": null
+    },
+    {
+      "id": "adr_002",
+      "label": "ADR-002: FastAPI Async Stack & Hybrid WebSocket Framing",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "adr-002: fastapi async stack & hybrid websocket framing",
+      "source_file": "docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md",
+      "source_location": "L1-L82"
+    },
+    {
+      "id": "adr_002_postgres_jsonb",
+      "label": "PostgreSQL 16 (asyncpg + JSONB Transcripts & Reports)",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "postgresql 16 (asyncpg + jsonb transcripts & reports)",
+      "source_file": "docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md",
+      "source_location": "L46-L54"
+    },
+    {
+      "id": "plan_prd_contracts",
+      "label": "Plan: Comprehensive PRD, ADR-002 & Contracts",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "plan: comprehensive prd, adr-002 & contracts",
+      "source_file": "docs/plans/2026-10-26-comprehensive-prd-and-contracts.md",
+      "source_location": "L1-L78"
+    },
+    {
+      "id": "prd_eval_worker",
+      "label": "Post-Interview Competency Evaluation Worker (Gemini 2.5 Pro)",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "post-interview competency evaluation worker (gemini 2.5 pro)",
+      "source_file": "PRD.md",
+      "source_location": "L287-L345"
+    },
+    {
+      "id": "prd_master_doc",
+      "label": "PRD.md: Product Requirements & System Specification",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "prd.md: product requirements & system specification",
+      "source_file": "PRD.md",
+      "source_location": "L1-L550"
+    },
+    {
+      "id": "prd_resilience_reconnect",
+      "label": "Session Resumption, Silence Watchdog & Adaptive Quality Governor",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "session resumption, silence watchdog & adaptive quality governor",
+      "source_file": "PRD.md",
+      "source_location": "L580-L630"
+    },
+    {
+      "id": "prd_rest_api",
+      "label": "Backend REST API (/api/v1/sessions & /report)",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "backend rest api (/api/v1/sessions & /report)",
+      "source_file": "PRD.md",
+      "source_location": "L440-L454"
+    },
+    {
+      "id": "req_platform",
+      "label": "Real-Time AI Interviewer Platform",
+      "community": 1,
+      "file_type": "document",
+      "norm_label": "real-time ai interviewer platform",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L1-L5"
+    },
+    {
+      "id": "contract_vrm_states",
+      "label": "Contract: VRM Avatar State Machine & Lerp Formula (vrm-avatar-states.md)",
+      "community": 2,
+      "file_type": "document",
+      "norm_label": "contract: vrm avatar state machine & lerp formula (vrm-avatar-states.md)",
+      "source_file": "docs/contracts/vrm-avatar-states.md",
+      "source_location": "L1-L85"
+    },
+    {
+      "id": "contract_ws_protocol",
+      "label": "Contract: Hybrid WebSocket Protocol (websocket-protocol.md)",
+      "community": 2,
+      "file_type": "document",
+      "norm_label": "contract: hybrid websocket protocol (websocket-protocol.md)",
+      "source_file": "docs/contracts/websocket-protocol.md",
+      "source_location": "L1-L195"
+    },
+    {
+      "id": "contracts_index",
+      "label": "WebSocket & Audio System Contracts Index",
+      "community": 2,
+      "file_type": "document",
+      "norm_label": "websocket & audio system contracts index",
+      "source_file": "docs/contracts/README.md",
+      "source_location": "L1-L11"
+    },
+    {
+      "id": "prd_frontend_state_machine",
+      "label": "Frontend Interview Room & Lobby State Machine",
+      "community": 2,
+      "file_type": "document",
+      "norm_label": "frontend interview room & lobby state machine",
+      "source_file": "PRD.md",
+      "source_location": "L349-L435"
+    },
+    {
+      "id": "req_barge_in",
+      "label": "Natural Interruption (Barge-In Handling)",
+      "community": 2,
+      "file_type": "document",
+      "norm_label": "natural interruption (barge-in handling)",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "agents_rules",
+      "label": "AGENTS.md Workspace Rules & Guardrails",
+      "community": 3,
+      "file_type": "document",
+      "norm_label": "agents.md workspace rules & guardrails",
+      "source_file": "AGENTS.md",
+      "source_location": "L1-L107"
+    },
+    {
+      "id": "skill_graphify",
+      "label": "Graphify Knowledge Graph Skill",
+      "community": 3,
+      "file_type": "document",
+      "norm_label": "graphify knowledge graph skill",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": "L1-L60"
+    },
+    {
+      "id": "skill_plan_track",
+      "label": "Plan-and-Track Skill SOP",
+      "community": 3,
+      "file_type": "document",
+      "norm_label": "plan-and-track skill sop",
+      "source_file": ".agents/skills/plan-and-track/SKILL.md",
+      "source_location": "L1-L63"
+    },
+    {
+      "id": "state_tracker",
+      "label": "STATE.md Project Tracker",
+      "community": 3,
+      "file_type": "document",
+      "norm_label": "state.md project tracker",
+      "source_file": "docs/STATE.md",
+      "source_location": "L1-L60"
+    },
+    {
+      "id": "contract_audio_spec",
+      "label": "Contract: Audio Pipeline & Formant Lip-Sync Spec (audio-pipeline-spec.md)",
+      "community": 4,
+      "file_type": "document",
+      "norm_label": "contract: audio pipeline & formant lip-sync spec (audio-pipeline-spec.md)",
+      "source_file": "docs/contracts/audio-pipeline-spec.md",
+      "source_location": "L1-L120"
+    },
+    {
+      "id": "prd_pcm_player",
+      "label": "PcmStreamPlayer (24kHz Gapless AudioBuffer Queue)",
+      "community": 4,
+      "file_type": "document",
+      "norm_label": "pcmstreamplayer (24khz gapless audiobuffer queue)",
+      "source_file": "PRD.md",
+      "source_location": "L174-L194"
+    },
+    {
+      "id": "req_analyser_lipsync",
+      "label": "AudioContext & AnalyserNode Real-Time Lip-Sync",
+      "community": 4,
+      "file_type": "document",
+      "norm_label": "audiocontext & analysernode real-time lip-sync",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L40-L43"
+    },
+    {
+      "id": "req_audioworklet",
+      "label": "Browser AudioWorklet Input (PCM 16kHz Mono)",
+      "community": 4,
+      "file_type": "document",
+      "norm_label": "browser audioworklet input (pcm 16khz mono)",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "adr_001",
+      "label": "ADR-001: Core Architecture Decision",
+      "community": 5,
+      "file_type": "document",
+      "norm_label": "adr-001: core architecture decision",
+      "source_file": "docs/decisions/ADR-001-core-architecture.md",
+      "source_location": "L1-L56"
+    },
+    {
+      "id": "req_viseme_blendshapes",
+      "label": "VRM Blendshapes & Visemes (aa, ih, ou, ee, oh)",
+      "community": 5,
+      "file_type": "document",
+      "norm_label": "vrm blendshapes & visemes (aa, ih, ou, ee, oh)",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L17-L18"
+    },
+    {
+      "id": "req_vrm_avatar",
+      "label": "3D VRM Client-Side Avatar (Three.js + @pixiv/three-vrm)",
+      "community": 5,
+      "file_type": "document",
+      "norm_label": "3d vrm client-side avatar (three.js + @pixiv/three-vrm)",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L13-L18"
+    },
+    {
+      "id": "prd_stage_controller",
+      "label": "Interview Stage Progression & Timekeeper Controller",
+      "community": 6,
+      "file_type": "document",
+      "norm_label": "interview stage progression & timekeeper controller",
+      "source_file": "PRD.md",
+      "source_location": "L263-L285"
+    },
+    {
+      "id": "req_backend_relay",
+      "label": "Lightweight Backend WebSocket Relay (FastAPI / uvloop)",
+      "community": 6,
+      "file_type": "document",
+      "norm_label": "lightweight backend websocket relay (fastapi / uvloop)",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L25-L31"
+    },
+    {
+      "id": "req_gcp_deployment",
+      "label": "GCP Containerized Deployment (Cloud Run / GKE)",
+      "community": 6,
+      "file_type": "document",
+      "norm_label": "gcp containerized deployment (cloud run / gke)",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L58-L62"
+    },
+    {
+      "id": "prd_prompt_injector",
+      "label": "Dynamic Context & System Prompt Injector (JD + CV + Rubric)",
+      "community": 7,
+      "file_type": "document",
+      "norm_label": "dynamic context & system prompt injector (jd + cv + rubric)",
+      "source_file": "PRD.md",
+      "source_location": "L103-L148"
+    },
+    {
+      "id": "req_gemini_live_api",
+      "label": "Gemini Multimodal Live API (WSS Voice-to-Voice)",
+      "community": 7,
+      "file_type": "document",
+      "norm_label": "gemini multimodal live api (wss voice-to-voice)",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": "L20-L23"
+    }
+  ],
+  "links": [
+    {
+      "source": "adr_002_postgres_jsonb",
+      "target": "prd_rest_api",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_vrm_states",
+      "target": "req_barge_in",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/vrm-avatar-states.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pcm_player",
+      "target": "req_barge_in",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/audio-pipeline-spec.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_analyser_lipsync",
+      "target": "req_viseme_blendshapes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/audio-pipeline-spec.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_gemini_live_api",
+      "target": "req_backend_relay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_vrm_states",
+      "target": "prd_frontend_state_machine",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/vrm-avatar-states.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_stage_controller",
+      "target": "req_backend_relay",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_backend_relay",
+      "target": "req_gcp_deployment",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_backend_relay",
+      "target": "contract_ws_protocol",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/websocket-protocol.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002",
+      "target": "adr_002_postgres_jsonb",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002",
+      "target": "req_backend_relay",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md",
+      "weight": 1.0
+    },
+    {
+      "source": "arch_workflow_blueprint",
+      "target": "frontend_mock_simulator_harness",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/ARCHITECTURE_AND_WORKFLOW.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_audio_spec",
+      "target": "req_audioworklet",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/audio-pipeline-spec.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_database_schema",
+      "target": "db_table_candidates",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_database_schema",
+      "target": "db_table_evaluation_reports",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_database_schema",
+      "target": "db_table_interview_sessions",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_database_schema",
+      "target": "db_table_interview_transcripts",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_database_schema",
+      "target": "db_table_job_positions",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_eval_worker",
+      "target": "prd_master_doc",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "prd_frontend_state_machine",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "prd_pcm_player",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "prd_prompt_injector",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "prd_resilience_reconnect",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "prd_rest_api",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "prd_stage_controller",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "req_platform",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_analyser_lipsync",
+      "target": "contract_audio_spec",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/audio-pipeline-spec.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_gemini_live_api",
+      "target": "req_barge_in",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_viseme_blendshapes",
+      "target": "req_vrm_avatar",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/vrm-avatar-states.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_vrm_avatar",
+      "target": "contract_vrm_states",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/vrm-avatar-states.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_001",
+      "target": "req_backend_relay",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/decisions/ADR-001-core-architecture.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_001",
+      "target": "req_gemini_live_api",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/decisions/ADR-001-core-architecture.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_001",
+      "target": "req_vrm_avatar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/decisions/ADR-001-core-architecture.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002",
+      "target": "prd_master_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002",
+      "target": "adr_001",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002",
+      "target": "contract_ws_protocol",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002",
+      "target": "plan_prd_contracts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-10-26-comprehensive-prd-and-contracts.md",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules",
+      "target": "skill_graphify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules",
+      "target": "skill_plan_track",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_audio_spec",
+      "target": "contracts_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_vrm_states",
+      "target": "contracts_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_ws_protocol",
+      "target": "contracts_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "db_table_evaluation_reports",
+      "target": "db_table_interview_sessions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "db_table_interview_sessions",
+      "target": "db_table_candidates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "db_table_interview_sessions",
+      "target": "db_table_job_positions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "db_table_interview_transcripts",
+      "target": "db_table_interview_sessions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/database-schema.md",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_phase1_contracts",
+      "target": "arch_workflow_blueprint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-10-26-phase-1-master-workflow-and-data-contracts.md",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_phase1_contracts",
+      "target": "contract_database_schema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-10-26-phase-1-master-workflow-and-data-contracts.md",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_phase1_contracts",
+      "target": "contract_rest_api",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-10-26-phase-1-master-workflow-and-data-contracts.md",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_prd_contracts",
+      "target": "contracts_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-10-26-comprehensive-prd-and-contracts.md",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_prd_contracts",
+      "target": "prd_master_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-10-26-comprehensive-prd-and-contracts.md",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_prd_contracts",
+      "target": "skill_plan_track",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-10-26-comprehensive-prd-and-contracts.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_master_doc",
+      "target": "adr_001",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "skill_plan_track",
+      "target": "state_tracker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/skills/plan-and-track/SKILL.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002_postgres_jsonb",
+      "target": "prd_eval_worker",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_rest_api",
+      "target": "contract_database_schema",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/rest-api-contract.md",
+      "weight": 1.0
+    },
+    {
+      "source": "contract_ws_protocol",
+      "target": "prd_frontend_state_machine",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/websocket-protocol.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pcm_player",
+      "target": "req_gemini_live_api",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pcm_player",
+      "target": "req_analyser_lipsync",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/audio-pipeline-spec.md",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_prompt_injector",
+      "target": "req_gemini_live_api",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    },
+    {
+      "source": "req_audioworklet",
+      "target": "req_backend_relay",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contracts/audio-pipeline-spec.md",
+      "weight": 1.0
+    },
+    {
+      "source": "adr_002_postgres_jsonb",
+      "target": "prd_resilience_reconnect",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "PRD.md",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

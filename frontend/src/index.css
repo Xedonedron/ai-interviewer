@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas text-charcoal font-sans antialiased selection:bg-subtle selection:text-charcoal;
+  }
+}
+
+/* Custom Smooth Scrollbar for Transcript */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D5CC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BCB7AC;
+}
+
+/* Subtle pulse animation for audio aura */
+@keyframes subtleBreathe {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.03);
+  }
+}
+
+.animate-aura {
+  animation: subtleBreathe 4.5s ease-in-out infinite;
+}
+
+/* Resizer active state */
+.resizing {
+  cursor: col-resize !important;
+  user-select: none !important;
+}

@@ -1,0 +1,71 @@
+# ==============================================================================
+# Real-Time AI Interviewer Platform — Full-Stack Docker Compose
+# Topology: PostgreSQL 16 + FastAPI Async Relay Backend + Nginx React/VRM Frontend
+# ==============================================================================
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ai-interviewer-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-interviewer}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-interviewer_secret_password}
+      POSTGRES_DB: ${POSTGRES_DB:-ai_interviewer}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-interviewer} -d ${POSTGRES_DB:-ai_interviewer}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ai-interviewer-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      APP_ENV: ${APP_ENV:-production}
+      DATABASE_URL: ${DATABASE_URL:-postgresql+asyncpg://interviewer:interviewer_secret_password@postgres:5432/ai_interviewer}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-replace-with-at-least-32-bytes-hmac-sha256-secret-key-prod}
+      JWT_ALGORITHM: ${JWT_ALGORITHM:-HS256}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_LIVE_MODEL: ${GEMINI_LIVE_MODEL:-gemini-2.5-flash-native-audio-preview-12-2025}
+      GEMINI_EVAL_MODEL: ${GEMINI_EVAL_MODEL:-gemini-2.5-pro}
+      CORS_ORIGINS: ${CORS_ORIGINS:-["http://localhost:5173","http://localhost:8080","http://127.0.0.1:5173","http://127.0.0.1:8080"]}
+      PORT: 8000
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/api/v1/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-}
+        VITE_WS_BASE_URL: ${VITE_WS_BASE_URL:-}
+        VITE_USE_MOCK_SIMULATOR: ${VITE_USE_MOCK_SIMULATOR:-false}
+    container_name: ai-interviewer-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+
+volumes:
+  pgdata:

@@ -1,0 +1,218 @@
+{
+  ".agents/skills/plan-and-track/SKILL.md": {
+    "mtime": 1793021210.2385838,
+    "seen": 1793021246.7807665,
+    "ast_hash": "533df58284cbf2639ad66ea2472a0a2b",
+    "semantic_hash": "533df58284cbf2639ad66ea2472a0a2b"
+  },
+  ".agents/skills/plan-and-track/resources/adr-template.md": {
+    "mtime": 1793020834.2332885,
+    "seen": 1793021246.7807739,
+    "ast_hash": "8e36d3f5f46776e05c9ed5f84003eea1",
+    "semantic_hash": "8e36d3f5f46776e05c9ed5f84003eea1"
+  },
+  ".agents/skills/plan-and-track/resources/plan-template.md": {
+    "mtime": 1793021210.246584,
+    "seen": 1793021246.7807775,
+    "ast_hash": "46ece6800afdd3803674d9edd9883323",
+    "semantic_hash": "46ece6800afdd3803674d9edd9883323"
+  },
+  "AGENTS.md": {
+    "mtime": 1793021210.2305834,
+    "seen": 1793021246.7807794,
+    "ast_hash": "15a1967ea954cf04ba2531922e7b0698",
+    "semantic_hash": "15a1967ea954cf04ba2531922e7b0698"
+  },
+  "README.md": {
+    "mtime": 1793021305.7688863,
+    "seen": 1793022112.3369136,
+    "ast_hash": "c221babb3942bebddec95414ecdff071",
+    "semantic_hash": "c221babb3942bebddec95414ecdff071"
+  },
+  "REQUIREMENTS.md": {
+    "mtime": 1793019922.3660533,
+    "seen": 1793021246.780783,
+    "ast_hash": "64c763af45a5c0c80e072649ee5570c6",
+    "semantic_hash": "64c763af45a5c0c80e072649ee5570c6"
+  },
+  "docs/STATE.md": {
+    "mtime": 1793022177.477408,
+    "seen": 1793022184.4348252,
+    "ast_hash": "fe374fbbe15c57596eb5912a04314aec",
+    "semantic_hash": ""
+  },
+  "docs/contracts/README.md": {
+    "mtime": 1793021973.7606595,
+    "seen": 1793022112.336919,
+    "ast_hash": "f1be564fbfc7b4d09f44a1c813033564",
+    "semantic_hash": "f1be564fbfc7b4d09f44a1c813033564"
+  },
+  "docs/decisions/ADR-001-core-architecture.md": {
+    "mtime": 1793020872.3862538,
+    "seen": 1793021246.7807875,
+    "ast_hash": "1b48bf9a4cf890ae17ce8e7509f70d2b",
+    "semantic_hash": "1b48bf9a4cf890ae17ce8e7509f70d2b"
+  },
+  "docs/plans/2026-10-26-workspace-governance-setup.md": {
+    "mtime": 1793021305.752886,
+    "seen": 1793022112.3369308,
+    "ast_hash": "fa323af7bdede39c119fe1df9c063c9e",
+    "semantic_hash": "fa323af7bdede39c119fe1df9c063c9e"
+  },
+  "PRD.md": {
+    "mtime": 1793021827.7612445,
+    "seen": 1793022112.3369117,
+    "ast_hash": "86656a02b1376e3979b63c057d3a0b5e",
+    "semantic_hash": "86656a02b1376e3979b63c057d3a0b5e"
+  },
+  "docs/contracts/audio-pipeline-spec.md": {
+    "mtime": 1793021973.7446592,
+    "seen": 1793022112.3369207,
+    "ast_hash": "b47e4bd9c3af1a562e97e92dc415f66c",
+    "semantic_hash": "b47e4bd9c3af1a562e97e92dc415f66c"
+  },
+  "docs/contracts/vrm-avatar-states.md": {
+    "mtime": 1793021973.7486591,
+    "seen": 1793022112.3369224,
+    "ast_hash": "6d67b5d828cdf8d96b695d4623fb8910",
+    "semantic_hash": "6d67b5d828cdf8d96b695d4623fb8910"
+  },
+  "docs/contracts/websocket-protocol.md": {
+    "mtime": 1793021973.7366588,
+    "seen": 1793022112.3369238,
+    "ast_hash": "1eb6d217d5f353ac4f65cd188dc89b64",
+    "semantic_hash": "1eb6d217d5f353ac4f65cd188dc89b64"
+  },
+  "docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md": {
+    "mtime": 1793021549.922704,
+    "seen": 1793022112.3369274,
+    "ast_hash": "76ef5b99f2e1e9536e599924c99560ef",
+    "semantic_hash": "76ef5b99f2e1e9536e599924c99560ef"
+  },
+  "docs/plans/2026-10-26-comprehensive-prd-and-contracts.md": {
+    "mtime": 1793022177.4694078,
+    "seen": 1793022184.434842,
+    "ast_hash": "4fcf44c66c738cad1e291af4940afdda",
+    "semantic_hash": ""
+  },
+  "/srv/projects/ai-interviewer/.agents/skills/plan-and-track/SKILL.md": {
+    "mtime": 1793021210.2385838,
+    "seen": 1793022208.3823369,
+    "ast_hash": "533df58284cbf2639ad66ea2472a0a2b",
+    "semantic_hash": "533df58284cbf2639ad66ea2472a0a2b"
+  },
+  "/srv/projects/ai-interviewer/.agents/skills/plan-and-track/resources/adr-template.md": {
+    "mtime": 1793020834.2332885,
+    "seen": 1793022208.3823426,
+    "ast_hash": "8e36d3f5f46776e05c9ed5f84003eea1",
+    "semantic_hash": "8e36d3f5f46776e05c9ed5f84003eea1"
+  },
+  "/srv/projects/ai-interviewer/.agents/skills/plan-and-track/resources/plan-template.md": {
+    "mtime": 1793021210.246584,
+    "seen": 1793022208.3823454,
+    "ast_hash": "46ece6800afdd3803674d9edd9883323",
+    "semantic_hash": "46ece6800afdd3803674d9edd9883323"
+  },
+  "/srv/projects/ai-interviewer/AGENTS.md": {
+    "mtime": 1793021210.2305834,
+    "seen": 1793022208.3823476,
+    "ast_hash": "15a1967ea954cf04ba2531922e7b0698",
+    "semantic_hash": "15a1967ea954cf04ba2531922e7b0698"
+  },
+  "/srv/projects/ai-interviewer/PRD.md": {
+    "mtime": 1793024066.7651446,
+    "seen": 1793024340.67856,
+    "ast_hash": "e32f02fa064798b8fe5071b688ea94d4",
+    "semantic_hash": "e32f02fa064798b8fe5071b688ea94d4"
+  },
+  "/srv/projects/ai-interviewer/README.md": {
+    "mtime": 1793021305.7688863,
+    "seen": 1793022208.3823512,
+    "ast_hash": "c221babb3942bebddec95414ecdff071",
+    "semantic_hash": "c221babb3942bebddec95414ecdff071"
+  },
+  "/srv/projects/ai-interviewer/REQUIREMENTS.md": {
+    "mtime": 1793019922.3660533,
+    "seen": 1793022208.382353,
+    "ast_hash": "64c763af45a5c0c80e072649ee5570c6",
+    "semantic_hash": "64c763af45a5c0c80e072649ee5570c6"
+  },
+  "/srv/projects/ai-interviewer/docs/STATE.md": {
+    "mtime": 1793024151.9311128,
+    "seen": 1793024340.6785696,
+    "ast_hash": "6fffc3d0c5ff4a2f9b908be3aee7718e",
+    "semantic_hash": "6fffc3d0c5ff4a2f9b908be3aee7718e"
+  },
+  "/srv/projects/ai-interviewer/docs/contracts/README.md": {
+    "mtime": 1793024066.785145,
+    "seen": 1793024340.6785712,
+    "ast_hash": "e0c27be5120becfcfe1358c80c0be8bf",
+    "semantic_hash": "e0c27be5120becfcfe1358c80c0be8bf"
+  },
+  "/srv/projects/ai-interviewer/docs/contracts/audio-pipeline-spec.md": {
+    "mtime": 1793021973.7446592,
+    "seen": 1793022208.382358,
+    "ast_hash": "b47e4bd9c3af1a562e97e92dc415f66c",
+    "semantic_hash": "b47e4bd9c3af1a562e97e92dc415f66c"
+  },
+  "/srv/projects/ai-interviewer/docs/contracts/vrm-avatar-states.md": {
+    "mtime": 1793021973.7486591,
+    "seen": 1793022208.3823595,
+    "ast_hash": "6d67b5d828cdf8d96b695d4623fb8910",
+    "semantic_hash": "6d67b5d828cdf8d96b695d4623fb8910"
+  },
+  "/srv/projects/ai-interviewer/docs/contracts/websocket-protocol.md": {
+    "mtime": 1793024066.7251437,
+    "seen": 1793024340.6785815,
+    "ast_hash": "4fd39d075ff807cf4ecf127818ff0d97",
+    "semantic_hash": "4fd39d075ff807cf4ecf127818ff0d97"
+  },
+  "/srv/projects/ai-interviewer/docs/decisions/ADR-001-core-architecture.md": {
+    "mtime": 1793020872.3862538,
+    "seen": 1793022208.3823626,
+    "ast_hash": "1b48bf9a4cf890ae17ce8e7509f70d2b",
+    "semantic_hash": "1b48bf9a4cf890ae17ce8e7509f70d2b"
+  },
+  "/srv/projects/ai-interviewer/docs/decisions/ADR-002-backend-tech-stack-and-session-protocol.md": {
+    "mtime": 1793021549.922704,
+    "seen": 1793022208.3823638,
+    "ast_hash": "76ef5b99f2e1e9536e599924c99560ef",
+    "semantic_hash": "76ef5b99f2e1e9536e599924c99560ef"
+  },
+  "/srv/projects/ai-interviewer/docs/plans/2026-10-26-comprehensive-prd-and-contracts.md": {
+    "mtime": 1793022177.4694078,
+    "seen": 1793022208.3823655,
+    "ast_hash": "4fcf44c66c738cad1e291af4940afdda",
+    "semantic_hash": "4fcf44c66c738cad1e291af4940afdda"
+  },
+  "/srv/projects/ai-interviewer/docs/plans/2026-10-26-workspace-governance-setup.md": {
+    "mtime": 1793021305.752886,
+    "seen": 1793022208.382367,
+    "ast_hash": "fa323af7bdede39c119fe1df9c063c9e",
+    "semantic_hash": "fa323af7bdede39c119fe1df9c063c9e"
+  },
+  "/srv/projects/ai-interviewer/docs/ARCHITECTURE_AND_WORKFLOW.md": {
+    "mtime": 1793023819.6274328,
+    "seen": 1793024340.6785672,
+    "ast_hash": "3d79ae6d6efbe31d3cbf1c0e397de5cd",
+    "semantic_hash": "3d79ae6d6efbe31d3cbf1c0e397de5cd"
+  },
+  "/srv/projects/ai-interviewer/docs/contracts/database-schema.md": {
+    "mtime": 1793023927.5339267,
+    "seen": 1793024340.6785753,
+    "ast_hash": "a8e1302956d08a5709d9e6e09b000af0",
+    "semantic_hash": "a8e1302956d08a5709d9e6e09b000af0"
+  },
+  "/srv/projects/ai-interviewer/docs/contracts/rest-api-contract.md": {
+    "mtime": 1793024032.216346,
+    "seen": 1793024340.6785777,
+    "ast_hash": "068244cf6af0686b06b255c14c2c3bb5",
+    "semantic_hash": "068244cf6af0686b06b255c14c2c3bb5"
+  },
+  "/srv/projects/ai-interviewer/docs/plans/2026-10-26-phase-1-master-workflow-and-data-contracts.md": {
+    "mtime": 1793024151.9191124,
+    "seen": 1793024340.678597,
+    "ast_hash": "310ea550b2c5c3eb48c97039baf086ba",
+    "semantic_hash": "310ea550b2c5c3eb48c97039baf086ba"
+  }
+}
