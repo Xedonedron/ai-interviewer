@@ -462,7 +462,37 @@ export const RecruiterSetupPage: React.FC = () => {
           <h2 className="mb-4 font-serif text-xl text-charcoal">
             4. Pengaturan Sesi & Pewawancara
           </h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <div>
+              <label className="mb-1.5 block text-xs font-semibold text-charcoal">
+                Model Avatar 3D (.vrm)
+              </label>
+              <select
+                value={form.session_config.vrm_model_url}
+                onChange={(e) => {
+                  const nextUrl = e.target.value;
+                  const isBima = nextUrl.includes('bima');
+                  setForm({
+                    ...form,
+                    session_config: {
+                      ...form.session_config,
+                      vrm_model_url: nextUrl,
+                      interviewer_persona_name: isBima ? 'Bima' : 'Alya',
+                      voice_name: isBima ? 'Puck' : 'Aoede',
+                    },
+                  });
+                }}
+                className="w-full rounded-xl border border-subtle bg-canvas px-3.5 py-2.5 text-sm text-charcoal focus:border-accent focus:outline-none"
+              >
+                <option value="/models/alya.vrm">
+                  Alya — Female 3D VRM (Seed-san)
+                </option>
+                <option value="/models/bima.vrm">
+                  Bima — Standard 3D VRM
+                </option>
+              </select>
+            </div>
+
             <div>
               <label className="mb-1.5 block text-xs font-semibold text-charcoal">
                 Nama Pewawancara AI

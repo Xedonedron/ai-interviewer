@@ -95,19 +95,20 @@ export class VrmAvatarEngine {
   }
 
   private setupLightingAndBackdrop(): void {
-    const hemiLight = new THREE.HemisphereLight(0xfffbf0, 0xeae7df, 0.95);
+    // Match official @pixiv/three-vrm lighting (DirectionalLight Math.PI) + warm studio fill
+    const keyLight = new THREE.DirectionalLight(0xffffff, Math.PI * 0.85);
+    keyLight.position.set(1.0, 1.5, 2.0);
+    this.scene.add(keyLight);
+
+    const fillLight = new THREE.DirectionalLight(0xfffbf0, 1.1);
+    fillLight.position.set(-1.5, 1.2, 1.5);
+    this.scene.add(fillLight);
+
+    const hemiLight = new THREE.HemisphereLight(0xffffff, 0xeae7df, 0.9);
     hemiLight.position.set(0, 3, 0);
     this.scene.add(hemiLight);
 
-    const keyLight = new THREE.DirectionalLight(0xfffbf0, 1.3);
-    keyLight.position.set(1.5, 2.5, 2.0);
-    this.scene.add(keyLight);
-
-    const fillLight = new THREE.DirectionalLight(0xe0e6ed, 0.7);
-    fillLight.position.set(-1.8, 1.2, 1.5);
-    this.scene.add(fillLight);
-
-    const ambientLight = new THREE.AmbientLight(0xfdfbf7, 0.65);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.75);
     this.scene.add(ambientLight);
   }
 
@@ -582,8 +583,7 @@ export class VrmAvatarEngine {
       // Use updateStyle = true (same as reference HTML) so Three.js sets explicit pixel width & height
       this.renderer.setSize(width, height);
       this.renderer.setPixelRatio(this.governor.getRecommendedPixelRatio());
-      this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      this.renderer.toneMappingExposure = 1.05;
+      this.renderer.toneMapping = THREE.NoToneMapping;
       this.renderer.outputColorSpace = THREE.SRGBColorSpace;
       this.renderer.domElement.style.display = 'block';
       container.innerHTML = '';
@@ -683,8 +683,12 @@ export class VrmAvatarEngine {
         VRMUtils.deepDispose(this.vrm.scene);
       }
 
+      // Official @pixiv/three-vrm@3.5.5 + three@0.180.0 optimization pipeline
       VRMUtils.removeUnnecessaryVertices(gltf.scene);
+      VRMUtils.combineSkeletons(gltf.scene);
+      VRMUtils.combineMorphs(loadedVrm);
       VRMUtils.rotateVRM0(loadedVrm);
+
       loadedVrm.scene.traverse((obj) => {
         obj.frustumCulled = false;
       });
@@ -714,14 +718,14 @@ export class VrmAvatarEngine {
       if (headNode) {
         const headPos = new THREE.Vector3();
         headNode.getWorldPosition(headPos);
-        let focusY = headPos.y + 0.04;
+        let focusY = headPos.y + 0.05;
         if (leftEyeNode) {
           const eyePos = new THREE.Vector3();
           leftEyeNode.getWorldPosition(eyePos);
           focusY = (headPos.y + eyePos.y) * 0.5;
         }
-        this.camera.position.set(0, focusY, 1.32);
-        this.camera.lookAt(0, focusY - 0.03, 0);
+        this.camera.position.set(0, focusY, 1.28);
+        this.camera.lookAt(0, focusY - 0.04, 0);
         this.camera.updateProjectionMatrix();
       }
 

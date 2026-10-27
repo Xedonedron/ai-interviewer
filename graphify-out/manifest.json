@@ -36,9 +36,9 @@
     "semantic_hash": "64c763af45a5c0c80e072649ee5570c6"
   },
   "docs/STATE.md": {
-    "mtime": 1793080390.4505093,
-    "seen": 1793081778.9604917,
-    "ast_hash": "bb2c5669cae861ebfc5738f0b1ef12c1",
+    "mtime": 1793081834.325588,
+    "seen": 1793082897.5522788,
+    "ast_hash": "1e5a57f4b7e063fbac080c99101adacd",
     "semantic_hash": ""
   },
   "docs/contracts/README.md": {
@@ -120,9 +120,9 @@
     "semantic_hash": "310ea550b2c5c3eb48c97039baf086ba"
   },
   "frontend/package.json": {
-    "mtime": 1793024705.0789995,
-    "seen": 1793026795.778522,
-    "ast_hash": "49b311bc41e75856a9e247909b37529c",
+    "mtime": 1793082585.8281145,
+    "seen": 1793082897.5521877,
+    "ast_hash": "57cdd01f397127c2897e41e3dc890f62",
     "semantic_hash": ""
   },
   "frontend/postcss.config.js": {
@@ -168,9 +168,9 @@
     "semantic_hash": ""
   },
   "frontend/src/engine/vrm/VrmAvatarEngine.ts": {
-    "mtime": 1793081709.2874973,
-    "seen": 1793081778.9604142,
-    "ast_hash": "7fa650ee651bf578d83448567e2b1878",
+    "mtime": 1793082789.1803367,
+    "seen": 1793082897.552205,
+    "ast_hash": "3854fee6d622c3c94bd900883420b61b",
     "semantic_hash": ""
   },
   "frontend/src/engine/vrm/VrmLipSync.ts": {
@@ -210,9 +210,9 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/InterviewRoomPage.tsx": {
-    "mtime": 1793081724.039736,
-    "seen": 1793081778.9604306,
-    "ast_hash": "00c483327273feeaa0596295869c830a",
+    "mtime": 1793082826.9531274,
+    "seen": 1793082897.5522203,
+    "ast_hash": "36df7b4d3d07dfa98fa262dc35a51069",
     "semantic_hash": ""
   },
   "frontend/src/pages/RecruiterDashboardPage.tsx": {
@@ -222,9 +222,9 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/RecruiterSetupPage.tsx": {
-    "mtime": 1793068609.1928563,
-    "seen": 1793068745.9056354,
-    "ast_hash": "432cf0909d0c76565c86557aa73fcabc",
+    "mtime": 1793082648.6934125,
+    "seen": 1793082897.5522244,
+    "ast_hash": "5915f4a743a296a078d2f48fc449b73d",
     "semantic_hash": ""
   },
   "frontend/src/services/apiClient.ts": {
@@ -660,9 +660,9 @@
     "semantic_hash": ""
   },
   "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md": {
-    "mtime": 1793080373.714148,
-    "seen": 1793080382.5994918,
-    "ast_hash": "46d0c12f06972afdf38efb7e80bbed97",
+    "mtime": 1793081815.677267,
+    "seen": 1793082897.552315,
+    "ast_hash": "8dbb5b948f8c62c76da6c0cd156b019f",
     "semantic_hash": ""
   },
   "[PROVE]_AI_Not_Visible.jpg": {

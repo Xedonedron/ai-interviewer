@@ -82,6 +82,9 @@ export const InterviewRoomPage: React.FC = () => {
   const [confirmEndOpen, setConfirmEndOpen] = useState<boolean>(false);
   const [endingSession, setEndingSession] = useState<boolean>(false);
   const [micAlertMessage, setMicAlertMessage] = useState<string | null>(null);
+  const [activeVrmUrl, setActiveVrmUrl] = useState<string>(
+    sessionMetadata?.vrm_model_url ?? '/models/alya.vrm',
+  );
 
   // Auto-scroll live transcript silently
   useEffect(() => {
@@ -297,15 +300,11 @@ export const InterviewRoomPage: React.FC = () => {
         player.getAnalyserNode(),
         player.getAudioContext()?.sampleRate ?? 48000,
       );
-      const customVrmUrl =
-        useInterviewStore.getState().sessionMetadata?.vrm_model_url;
-      if (
-        customVrmUrl &&
-        customVrmUrl !== '/models/alya.vrm' &&
-        customVrmUrl !== '/models/bima.vrm'
-      ) {
-        void engine.loadVrmModel(customVrmUrl);
-      }
+      const initialVrmUrl =
+        useInterviewStore.getState().sessionMetadata?.vrm_model_url ??
+        '/models/alya.vrm';
+      setActiveVrmUrl(initialVrmUrl);
+      void engine.loadVrmModel(initialVrmUrl);
     }
 
     // Defer WebSocket & AudioWorklet startup by 25ms so React 18 <StrictMode>
@@ -337,18 +336,21 @@ export const InterviewRoomPage: React.FC = () => {
     };
   }, [sessionId, token]);
 
-  // Reload VRM model only if sessionMetadata arrives asynchronously with a custom external vrm_model_url
+  // Reload VRM model when sessionMetadata arrives or when user switches VRM model
   useEffect(() => {
     const customVrmUrl = sessionMetadata?.vrm_model_url;
-    if (
-      customVrmUrl &&
-      customVrmUrl !== '/models/alya.vrm' &&
-      customVrmUrl !== '/models/bima.vrm' &&
-      vrmEngineRef.current
-    ) {
+    if (customVrmUrl && vrmEngineRef.current) {
+      setActiveVrmUrl(customVrmUrl);
       void vrmEngineRef.current.loadVrmModel(customVrmUrl);
     }
   }, [sessionMetadata?.vrm_model_url]);
+
+  const handleSelectVrmModel = (url: string) => {
+    setActiveVrmUrl(url);
+    if (vrmEngineRef.current) {
+      void vrmEngineRef.current.loadVrmModel(url);
+    }
+  };
 
   // Toggle Microphone (Zoom / Meet style)
   const handleToggleMic = async () => {
@@ -521,6 +523,34 @@ export const InterviewRoomPage: React.FC = () => {
                   Menyela pembicaraan
                 </div>
               )}
+            </div>
+
+            {/* Top-Right Overlay: Quick 3D VRM Character Switcher (Alya / Bima) */}
+            <div className="absolute top-4 right-4 z-20 flex items-center space-x-1 bg-canvas/90 backdrop-blur-md border border-subtle/80 p-1 rounded-full shadow-xs">
+              <button
+                type="button"
+                id="btn-vrm-alya"
+                onClick={() => handleSelectVrmModel('/models/alya.vrm')}
+                className={`px-2.5 py-1 rounded-full text-[11px] font-medium transition-colors ${
+                  activeVrmUrl === '/models/alya.vrm'
+                    ? 'bg-charcoal text-canvas'
+                    : 'text-muted hover:text-charcoal'
+                }`}
+              >
+                Alya (.vrm)
+              </button>
+              <button
+                type="button"
+                id="btn-vrm-bima"
+                onClick={() => handleSelectVrmModel('/models/bima.vrm')}
+                className={`px-2.5 py-1 rounded-full text-[11px] font-medium transition-colors ${
+                  activeVrmUrl === '/models/bima.vrm'
+                    ? 'bg-charcoal text-canvas'
+                    : 'text-muted hover:text-charcoal'
+                }`}
+              >
+                Bima (.vrm)
+              </button>
             </div>
 
             {/* Microphone Error / Warning Alert Toast */}
