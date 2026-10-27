@@ -7,6 +7,19 @@
   },
   "nodes": [
     {
+      "id": "frontend_src_services_apiclient_httpapierror",
+      "label": "HttpApiError",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "api.types.ts",
+      "file_type": "code",
+      "norm_label": "httpapierror",
+      "source_file": "frontend/src/services/apiClient.ts",
+      "source_location": "L96"
+    },
+    {
       "id": "frontend_src_types_api_types_apierrordetail",
       "label": "ApiErrorDetail",
       "_callable": true,
@@ -1203,17 +1216,17 @@
       "source_location": "L62"
     },
     {
-      "id": "frontend_src_engine_vrm_vrmavatarengine_avatarruntimetelemetry",
-      "label": "AvatarRuntimeTelemetry",
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_boneeulerrotation",
+      "label": "BoneEulerRotation",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
-      "norm_label": "avatarruntimetelemetry",
-      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L22"
+      "norm_label": "boneeulerrotation",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L12"
     },
     {
       "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator",
@@ -1222,37 +1235,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
       "norm_label": "vrmproceduralanimator",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
       "source_location": "L69"
     },
     {
-      "id": "frontend_src_types_api_types_avataremotion",
-      "label": "AvatarEmotion",
+      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor",
+      "label": "QualityGovernor",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "AvatarEmotion",
+      "community": 32,
+      "community_name": "VrmAvatarEngine.ts",
       "file_type": "code",
-      "norm_label": "avataremotion",
-      "source_file": "frontend/src/types/api.types.ts",
-      "source_location": "L28"
-    },
-    {
-      "id": "frontend_src_types_ws_types_avatarstateframe",
-      "label": "AvatarStateFrame",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AvatarEmotion",
-      "file_type": "code",
-      "norm_label": "avatarstateframe",
-      "source_file": "frontend/src/types/ws.types.ts",
-      "source_location": "L84"
+      "norm_label": "qualitygovernor",
+      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_engine_vrm_qualitygovernor_qualitymetrics",
@@ -1279,6 +1279,19 @@
       "norm_label": "qualitytier",
       "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
       "source_location": "L8"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmavatarengine_avatarruntimetelemetry",
+      "label": "AvatarRuntimeTelemetry",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "VrmAvatarEngine.ts",
+      "file_type": "code",
+      "norm_label": "avatarruntimetelemetry",
+      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
+      "source_location": "L22"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_proceduralrighandles",
@@ -1318,19 +1331,6 @@
       "norm_label": "proceduralposeoutput",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
       "source_location": "L18"
-    },
-    {
-      "id": "frontend_src_services_apiclient_httpapierror",
-      "label": "HttpApiError",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "MockInterviewHarness.ts",
-      "file_type": "code",
-      "norm_label": "httpapierror",
-      "source_file": "frontend/src/services/apiClient.ts",
-      "source_location": "L96"
     },
     {
       "id": "frontend_src_services_simulator_mockinterviewharness_mockharnesslisteners",
@@ -1736,6 +1736,45 @@
       "source_location": "L18"
     },
     {
+      "id": "frontend_src_services_wsclient_interviewwsclient",
+      "label": "InterviewWsClient",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": "interviewwsclient",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L39"
+    },
+    {
+      "id": "frontend_src_types_ws_types_clienttoservercontrolframe",
+      "label": "ClientToServerControlFrame",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": "clienttoservercontrolframe",
+      "source_file": "frontend/src/types/ws.types.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "frontend_src_types_ws_types_micstatereason",
+      "label": "MicStateReason",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": "micstatereason",
+      "source_file": "frontend/src/types/ws.types.ts",
+      "source_location": "L47"
+    },
+    {
       "id": "frontend_src_engine_audio_pcmstreamplayer_pcmstreamplayer",
       "label": "PcmStreamPlayer",
       "_callable": true,
@@ -1762,6 +1801,19 @@
       "source_location": "L108"
     },
     {
+      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext",
+      "label": "MockAudioContext",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "code",
+      "norm_label": "mockaudiocontext",
+      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
+      "source_location": "L348"
+    },
+    {
       "id": "frontend_src_services_simulator_mockinterviewharness_mockinterviewharness",
       "label": "MockInterviewHarness",
       "_callable": true,
@@ -1775,17 +1827,17 @@
       "source_location": "L128"
     },
     {
-      "id": "frontend_src_services_wsclient_interviewwsclient",
-      "label": "InterviewWsClient",
+      "id": "frontend_src_types_api_types_avataremotion",
+      "label": "AvatarEmotion",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 48,
       "community_name": "MockInterviewHarness",
       "file_type": "code",
-      "norm_label": "interviewwsclient",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L39"
+      "norm_label": "avataremotion",
+      "source_file": "frontend/src/types/api.types.ts",
+      "source_location": "L28"
     },
     {
       "id": "frontend_src_types_api_types_avatarstateid",
@@ -1801,56 +1853,17 @@
       "source_location": "L26"
     },
     {
-      "id": "frontend_src_types_ws_types_clienttoservercontrolframe",
-      "label": "ClientToServerControlFrame",
+      "id": "frontend_src_types_ws_types_avatarstateframe",
+      "label": "AvatarStateFrame",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 48,
       "community_name": "MockInterviewHarness",
       "file_type": "code",
-      "norm_label": "clienttoservercontrolframe",
+      "norm_label": "avatarstateframe",
       "source_file": "frontend/src/types/ws.types.ts",
-      "source_location": "L65"
-    },
-    {
-      "id": "frontend_src_types_ws_types_micstatereason",
-      "label": "MicStateReason",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": "micstatereason",
-      "source_file": "frontend/src/types/ws.types.ts",
-      "source_location": "L47"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_boneeulerrotation",
-      "label": "BoneEulerRotation",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "boneeulerrotation",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L12"
-    },
-    {
-      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor",
-      "label": "QualityGovernor",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "VrmAvatarEngine",
-      "file_type": "code",
-      "norm_label": "qualitygovernor",
-      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
-      "source_location": "L17"
+      "source_location": "L84"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
@@ -1949,25 +1962,48 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 72,
-      "community_name": "MockAudioWorkletNode",
+      "community": 7,
+      "community_name": "audioAndVrmEngine.test.ts",
       "file_type": "code",
       "norm_label": "mockaudioworkletnode",
       "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
       "source_location": "L334"
     },
     {
-      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext",
-      "label": "MockAudioContext",
+      "id": "frontend_src_services_apiclient_fetchwithmockfallback",
+      "label": "fetchWithMockFallback()",
       "_callable": true,
-      "_callable_class": true,
       "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
+      "community": 0,
+      "community_name": "api.types.ts",
       "file_type": "code",
-      "norm_label": "mockaudiocontext",
-      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
-      "source_location": "L348"
+      "norm_label": "fetchwithmockfallback()",
+      "source_file": "frontend/src/services/apiClient.ts",
+      "source_location": "L108"
+    },
+    {
+      "id": "frontend_src_services_apiclient_getapibaseurl",
+      "label": "getApiBaseUrl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "api.types.ts",
+      "file_type": "code",
+      "norm_label": "getapibaseurl()",
+      "source_file": "frontend/src/services/apiClient.ts",
+      "source_location": "L73"
+    },
+    {
+      "id": "frontend_src_services_apiclient_httpapierror_constructor",
+      "label": ".constructor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "api.types.ts",
+      "file_type": "code",
+      "norm_label": ".constructor()",
+      "source_file": "frontend/src/services/apiClient.ts",
+      "source_location": "L100"
     },
     {
       "id": "backend_app_api_v1_sessions_complete_session",
@@ -2930,40 +2966,16 @@
       "source_location": "L28"
     },
     {
-      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setavataremotion",
-      "label": ".setAvatarEmotion()",
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_computeblinkweight",
+      "label": "computeBlinkWeight()",
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
-      "norm_label": ".setavataremotion()",
-      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L759"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setavatarstate",
-      "label": ".setAvatarState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AvatarEmotion",
-      "file_type": "code",
-      "norm_label": ".setavatarstate()",
-      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L751"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmlipsync_vrmlipsynccontroller_forcezero",
-      "label": ".forceZero()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AvatarEmotion",
-      "file_type": "code",
-      "norm_label": ".forcezero()",
-      "source_file": "frontend/src/engine/vrm/VrmLipSync.ts",
-      "source_location": "L241"
+      "norm_label": "computeblinkweight()",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L46"
     },
     {
       "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_constructor",
@@ -2971,23 +2983,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
       "norm_label": ".constructor()",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
       "source_location": "L112"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_getemotion",
-      "label": ".getEmotion()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AvatarEmotion",
-      "file_type": "code",
-      "norm_label": ".getemotion()",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L151"
     },
     {
       "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_isvisemeactive",
@@ -2995,7 +2995,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
       "norm_label": ".isvisemeactive()",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
@@ -3007,7 +3007,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
       "norm_label": ".schedulenextblink()",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
@@ -3019,23 +3019,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
       "norm_label": ".schedulenextnod()",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
       "source_location": "L125"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_setemotion",
-      "label": ".setEmotion()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AvatarEmotion",
-      "file_type": "code",
-      "norm_label": ".setemotion()",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L143"
     },
     {
       "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_setstate",
@@ -3043,7 +3031,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
       "norm_label": ".setstate()",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
@@ -3055,7 +3043,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "code",
       "norm_label": ".update()",
       "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
@@ -3098,6 +3086,66 @@
       "source_location": "L117"
     },
     {
+      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_constructor",
+      "label": ".constructor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "VrmAvatarEngine.ts",
+      "file_type": "code",
+      "norm_label": ".constructor()",
+      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_getrecommendedpixelratio",
+      "label": ".getRecommendedPixelRatio()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "VrmAvatarEngine.ts",
+      "file_type": "code",
+      "norm_label": ".getrecommendedpixelratio()",
+      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_gettier",
+      "label": ".getTier()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "VrmAvatarEngine.ts",
+      "file_type": "code",
+      "norm_label": ".gettier()",
+      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
+      "source_location": "L81"
+    },
+    {
+      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_recordframe",
+      "label": ".recordFrame()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "VrmAvatarEngine.ts",
+      "file_type": "code",
+      "norm_label": ".recordframe()",
+      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_settier",
+      "label": ".setTier()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "VrmAvatarEngine.ts",
+      "file_type": "code",
+      "norm_label": ".settier()",
+      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
+      "source_location": "L63"
+    },
+    {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_renderfallback2dframe",
       "label": ".renderFallback2dFrame()",
       "_callable": true,
@@ -3107,7 +3155,7 @@
       "file_type": "code",
       "norm_label": ".renderfallback2dframe()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L406"
+      "source_location": "L407"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_stepframe",
@@ -3119,7 +3167,7 @@
       "file_type": "code",
       "norm_label": ".stepframe()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L780"
+      "source_location": "L784"
     },
     {
       "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_getstate",
@@ -3180,42 +3228,6 @@
       "norm_label": "test_phase4_rest_completion_with_csat_and_report()",
       "source_file": "backend/tests/test_e2e_lifecycle.py",
       "source_location": "L333"
-    },
-    {
-      "id": "frontend_src_services_apiclient_fetchwithmockfallback",
-      "label": "fetchWithMockFallback()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "MockInterviewHarness.ts",
-      "file_type": "code",
-      "norm_label": "fetchwithmockfallback()",
-      "source_file": "frontend/src/services/apiClient.ts",
-      "source_location": "L108"
-    },
-    {
-      "id": "frontend_src_services_apiclient_getapibaseurl",
-      "label": "getApiBaseUrl()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "MockInterviewHarness.ts",
-      "file_type": "code",
-      "norm_label": "getapibaseurl()",
-      "source_file": "frontend/src/services/apiClient.ts",
-      "source_location": "L73"
-    },
-    {
-      "id": "frontend_src_services_apiclient_httpapierror_constructor",
-      "label": ".constructor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "MockInterviewHarness.ts",
-      "file_type": "code",
-      "norm_label": ".constructor()",
-      "source_file": "frontend/src/services/apiClient.ts",
-      "source_location": "L100"
     },
     {
       "id": "frontend_src_services_apiclient_issimulatormodeenabled",
@@ -3602,16 +3614,184 @@
       "source_location": "L97"
     },
     {
-      "id": "frontend_src_engine_audio_pcmstreamplayer_decodepcms16letofloat32",
-      "label": "decodePcmS16LeToFloat32()",
+      "id": "frontend_src_services_simulator_mockinterviewharness_mockinterviewharness_handleclientping",
+      "label": ".handleClientPing()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".handleclientping()",
+      "source_file": "frontend/src/services/simulator/MockInterviewHarness.ts",
+      "source_location": "L391"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_connect",
+      "label": ".connect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".connect()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_disconnect",
+      "label": ".disconnect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".disconnect()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L267"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_handleincomingcontrolframe",
+      "label": ".handleIncomingControlFrame()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".handleincomingcontrolframe()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L178"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_isusingmock",
+      "label": ".isUsingMock()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".isusingmock()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L263"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_sendbinarypcm16k",
+      "label": ".sendBinaryPcm16k()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".sendbinarypcm16k()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L206"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_sendcontrolframe",
+      "label": ".sendControlFrame()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".sendcontrolframe()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L219"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_sendendsession",
+      "label": ".sendEndSession()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".sendendsession()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L252"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_sendmicstate",
+      "label": ".sendMicState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".sendmicstate()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L236"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_startmockharness",
+      "label": ".startMockHarness()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".startmockharness()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L161"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_startpingloop",
+      "label": ".startPingLoop()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".startpingloop()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L188"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_stoppingloop",
+      "label": ".stopPingLoop()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "InterviewWsClient",
+      "file_type": "code",
+      "norm_label": ".stoppingloop()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L196"
+    },
+    {
+      "id": "backend_app_ws_gemini_live_client_create_gemini_live_session",
+      "label": "create_gemini_live_session()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
       "community_name": "PcmStreamPlayer",
       "file_type": "code",
-      "norm_label": "decodepcms16letofloat32()",
-      "source_file": "frontend/src/engine/audio/PcmStreamPlayer.ts",
-      "source_location": "L19"
+      "norm_label": "create_gemini_live_session()",
+      "source_file": "backend/app/ws/gemini_live_client.py",
+      "source_location": "L784"
+    },
+    {
+      "id": "backend_app_ws_gemini_live_client_sanitize_and_lock_transcript_language",
+      "label": "sanitize_and_lock_transcript_language()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "code",
+      "norm_label": "sanitize_and_lock_transcript_language()",
+      "source_file": "backend/app/ws/gemini_live_client.py",
+      "source_location": "L114"
+    },
+    {
+      "id": "backend_tests_test_security_and_prompts_test_sanitize_and_lock_transcript_language_enforces_id_en_and_preserves_tech_terms",
+      "label": "test_sanitize_and_lock_transcript_language_enforces_id_en_and_preserves_tech_terms()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "code",
+      "norm_label": "test_sanitize_and_lock_transcript_language_enforces_id_en_and_preserves_tech_terms()",
+      "source_file": "backend/tests/test_security_and_prompts.py",
+      "source_location": "L145"
     },
     {
       "id": "frontend_src_engine_audio_pcmstreamplayer_pcmstreamplayer_constructor",
@@ -3842,30 +4022,6 @@
       "source_location": "L262"
     },
     {
-      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_dispose",
-      "label": ".dispose()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "MicCaptureManager",
-      "file_type": "code",
-      "norm_label": ".dispose()",
-      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L921"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_isdisposed",
-      "label": ".isDisposed()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "MicCaptureManager",
-      "file_type": "code",
-      "norm_label": ".isdisposed()",
-      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L917"
-    },
-    {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_loadvrmmodel",
       "label": ".loadVrmModel()",
       "_callable": true,
@@ -3876,6 +4032,66 @@
       "norm_label": ".loadvrmmodel()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
       "source_location": "L652"
+    },
+    {
+      "id": "frontend_src_services_wsclient_interviewwsclient_sendbargein",
+      "label": ".sendBargeIn()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "code",
+      "norm_label": ".sendbargein()",
+      "source_file": "frontend/src/services/wsClient.ts",
+      "source_location": "L244"
+    },
+    {
+      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_close",
+      "label": ".close()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "code",
+      "norm_label": ".close()",
+      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
+      "source_location": "L356"
+    },
+    {
+      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_creategain",
+      "label": ".createGain()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "code",
+      "norm_label": ".creategain()",
+      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
+      "source_location": "L370"
+    },
+    {
+      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_createmediastreamsource",
+      "label": ".createMediaStreamSource()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "code",
+      "norm_label": ".createmediastreamsource()",
+      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
+      "source_location": "L357"
+    },
+    {
+      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_resume",
+      "label": ".resume()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "code",
+      "norm_label": ".resume()",
+      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
+      "source_location": "L355"
     },
     {
       "id": "backend_tests_test_ws_relay_receive_until_json_type",
@@ -3912,6 +4128,66 @@
       "norm_label": "test_websocket_jwt_close_codes_4001_4002_4003()",
       "source_file": "backend/tests/test_ws_relay.py",
       "source_location": "L62"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setavataremotion",
+      "label": ".setAvatarEmotion()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "MockInterviewHarness",
+      "file_type": "code",
+      "norm_label": ".setavataremotion()",
+      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
+      "source_location": "L763"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setavatarstate",
+      "label": ".setAvatarState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "MockInterviewHarness",
+      "file_type": "code",
+      "norm_label": ".setavatarstate()",
+      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
+      "source_location": "L755"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmlipsync_vrmlipsynccontroller_forcezero",
+      "label": ".forceZero()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "MockInterviewHarness",
+      "file_type": "code",
+      "norm_label": ".forcezero()",
+      "source_file": "frontend/src/engine/vrm/VrmLipSync.ts",
+      "source_location": "L241"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_getemotion",
+      "label": ".getEmotion()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "MockInterviewHarness",
+      "file_type": "code",
+      "norm_label": ".getemotion()",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L151"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_vrmproceduralanimator_setemotion",
+      "label": ".setEmotion()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "MockInterviewHarness",
+      "file_type": "code",
+      "norm_label": ".setemotion()",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L143"
     },
     {
       "id": "frontend_src_services_simulator_mockinterviewharness_generatesyntheticformantpcm24k",
@@ -3972,18 +4248,6 @@
       "norm_label": ".cycleavatarstate()",
       "source_file": "frontend/src/services/simulator/MockInterviewHarness.ts",
       "source_location": "L313"
-    },
-    {
-      "id": "frontend_src_services_simulator_mockinterviewharness_mockinterviewharness_handleclientping",
-      "label": ".handleClientPing()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".handleclientping()",
-      "source_file": "frontend/src/services/simulator/MockInterviewHarness.ts",
-      "source_location": "L391"
     },
     {
       "id": "frontend_src_services_simulator_mockinterviewharness_mockinterviewharness_setavatarstate",
@@ -4082,30 +4346,6 @@
       "source_location": "L241"
     },
     {
-      "id": "frontend_src_services_wsclient_interviewwsclient_connect",
-      "label": ".connect()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".connect()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L65"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_disconnect",
-      "label": ".disconnect()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".disconnect()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L267"
-    },
-    {
       "id": "frontend_src_services_wsclient_interviewwsclient_getmockharness",
       "label": ".getMockHarness()",
       "_callable": true,
@@ -4118,184 +4358,16 @@
       "source_location": "L259"
     },
     {
-      "id": "frontend_src_services_wsclient_interviewwsclient_handleincomingcontrolframe",
-      "label": ".handleIncomingControlFrame()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".handleincomingcontrolframe()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L178"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_isusingmock",
-      "label": ".isUsingMock()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".isusingmock()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L263"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_sendbinarypcm16k",
-      "label": ".sendBinaryPcm16k()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".sendbinarypcm16k()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L206"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_sendcontrolframe",
-      "label": ".sendControlFrame()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".sendcontrolframe()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L219"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_sendendsession",
-      "label": ".sendEndSession()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".sendendsession()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L252"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_sendmicstate",
-      "label": ".sendMicState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".sendmicstate()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L236"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_startmockharness",
-      "label": ".startMockHarness()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".startmockharness()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L161"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_startpingloop",
-      "label": ".startPingLoop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".startpingloop()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L188"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_stoppingloop",
-      "label": ".stopPingLoop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "MockInterviewHarness",
-      "file_type": "code",
-      "norm_label": ".stoppingloop()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L196"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_computeblinkweight",
-      "label": "computeBlinkWeight()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "computeblinkweight()",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L46"
-    },
-    {
-      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_constructor",
-      "label": ".constructor()",
+      "id": "frontend_src_engine_audio_miccapturemanager_computeframerms",
+      "label": "computeFrameRms()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
       "community_name": "VrmAvatarEngine",
       "file_type": "code",
-      "norm_label": ".constructor()",
-      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
-      "source_location": "L25"
-    },
-    {
-      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_getrecommendedpixelratio",
-      "label": ".getRecommendedPixelRatio()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "VrmAvatarEngine",
-      "file_type": "code",
-      "norm_label": ".getrecommendedpixelratio()",
-      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
-      "source_location": "L69"
-    },
-    {
-      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_gettier",
-      "label": ".getTier()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "VrmAvatarEngine",
-      "file_type": "code",
-      "norm_label": ".gettier()",
-      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
-      "source_location": "L81"
-    },
-    {
-      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_recordframe",
-      "label": ".recordFrame()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "VrmAvatarEngine",
-      "file_type": "code",
-      "norm_label": ".recordframe()",
-      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
-      "source_location": "L29"
-    },
-    {
-      "id": "frontend_src_engine_vrm_qualitygovernor_qualitygovernor_settier",
-      "label": ".setTier()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "VrmAvatarEngine",
-      "file_type": "code",
-      "norm_label": ".settier()",
-      "source_file": "frontend/src/engine/vrm/QualityGovernor.ts",
-      "source_location": "L63"
+      "norm_label": "computeframerms()",
+      "source_file": "frontend/src/engine/audio/MicCaptureManager.ts",
+      "source_location": "L80"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_buildproceduralhumanoidrig",
@@ -4307,7 +4379,7 @@
       "file_type": "code",
       "norm_label": ".buildproceduralhumanoidrig()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L118"
+      "source_location": "L119"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_connectanalyser",
@@ -4319,7 +4391,7 @@
       "file_type": "code",
       "norm_label": ".connectanalyser()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L746"
+      "source_location": "L750"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_constructor",
@@ -4334,6 +4406,30 @@
       "source_location": "L76"
     },
     {
+      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_dispose",
+      "label": ".dispose()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "code",
+      "norm_label": ".dispose()",
+      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
+      "source_location": "L925"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_isdisposed",
+      "label": ".isDisposed()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "code",
+      "norm_label": ".isdisposed()",
+      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
+      "source_location": "L921"
+    },
+    {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_mount",
       "label": ".mount()",
       "_callable": true,
@@ -4343,7 +4439,7 @@
       "file_type": "code",
       "norm_label": ".mount()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L556"
+      "source_location": "L557"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_mountfallback2dcanvas",
@@ -4355,7 +4451,7 @@
       "file_type": "code",
       "norm_label": ".mountfallback2dcanvas()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L385"
+      "source_location": "L386"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setcandidatevoiceactive",
@@ -4367,7 +4463,7 @@
       "file_type": "code",
       "norm_label": ".setcandidatevoiceactive()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L763"
+      "source_location": "L767"
     },
     {
       "id": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setuplightingandbackdrop",
@@ -4391,7 +4487,7 @@
       "file_type": "code",
       "norm_label": ".startloop()",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L767"
+      "source_location": "L771"
     },
     {
       "id": "backend_app_services_evaluator_service_postinterviewevaluationservice_run_background_evaluation",
@@ -4766,18 +4862,6 @@
       "source_location": "L345"
     },
     {
-      "id": "frontend_src_engine_audio_miccapturemanager_computeframerms",
-      "label": "computeFrameRms()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "audioAndVrmEngine.test.ts",
-      "file_type": "code",
-      "norm_label": "computeframerms()",
-      "source_file": "frontend/src/engine/audio/MicCaptureManager.ts",
-      "source_location": "L80"
-    },
-    {
       "id": "frontend_src_engine_audio_miccapturemanager_downsamplefloat32buffer",
       "label": "downsampleFloat32Buffer()",
       "_callable": true,
@@ -4814,6 +4898,18 @@
       "source_location": "L29"
     },
     {
+      "id": "frontend_src_engine_audio_pcmstreamplayer_decodepcms16letofloat32",
+      "label": "decodePcmS16LeToFloat32()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "audioAndVrmEngine.test.ts",
+      "file_type": "code",
+      "norm_label": "decodepcms16letofloat32()",
+      "source_file": "frontend/src/engine/audio/PcmStreamPlayer.ts",
+      "source_location": "L19"
+    },
+    {
       "id": "frontend_src_tests_audioandvrmengine_test_createmockaudiocontext",
       "label": "createMockAudioContext()",
       "_callable": true,
@@ -4824,6 +4920,30 @@
       "norm_label": "createmockaudiocontext()",
       "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
       "source_location": "L39"
+    },
+    {
+      "id": "frontend_src_tests_audioandvrmengine_test_mockaudioworkletnode_connect",
+      "label": ".connect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "audioAndVrmEngine.test.ts",
+      "file_type": "code",
+      "norm_label": ".connect()",
+      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
+      "source_location": "L339"
+    },
+    {
+      "id": "frontend_src_tests_audioandvrmengine_test_mockaudioworkletnode_disconnect",
+      "label": ".disconnect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "audioAndVrmEngine.test.ts",
+      "file_type": "code",
+      "norm_label": ".disconnect()",
+      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
+      "source_location": "L345"
     },
     {
       "id": "frontend_src_tests_audioandvrmengine_test_postmessage",
@@ -4910,30 +5030,6 @@
       "source_location": "L22"
     },
     {
-      "id": "frontend_src_tests_audioandvrmengine_test_mockaudioworkletnode_connect",
-      "label": ".connect()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 72,
-      "community_name": "MockAudioWorkletNode",
-      "file_type": "code",
-      "norm_label": ".connect()",
-      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
-      "source_location": "L339"
-    },
-    {
-      "id": "frontend_src_tests_audioandvrmengine_test_mockaudioworkletnode_disconnect",
-      "label": ".disconnect()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 72,
-      "community_name": "MockAudioWorkletNode",
-      "file_type": "code",
-      "norm_label": ".disconnect()",
-      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
-      "source_location": "L345"
-    },
-    {
       "id": "backend_app_schemas_rubric_schemas_rubricconfigdto_validate_total_weight",
       "label": ".validate_total_weight()",
       "_callable": true,
@@ -4944,102 +5040,6 @@
       "norm_label": ".validate_total_weight()",
       "source_file": "backend/app/schemas/rubric_schemas.py",
       "source_location": "L118"
-    },
-    {
-      "id": "frontend_src_services_wsclient_interviewwsclient_sendbargein",
-      "label": ".sendBargeIn()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "code",
-      "norm_label": ".sendbargein()",
-      "source_file": "frontend/src/services/wsClient.ts",
-      "source_location": "L244"
-    },
-    {
-      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_close",
-      "label": ".close()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "code",
-      "norm_label": ".close()",
-      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
-      "source_location": "L356"
-    },
-    {
-      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_creategain",
-      "label": ".createGain()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "code",
-      "norm_label": ".creategain()",
-      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
-      "source_location": "L370"
-    },
-    {
-      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_createmediastreamsource",
-      "label": ".createMediaStreamSource()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "code",
-      "norm_label": ".createmediastreamsource()",
-      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
-      "source_location": "L357"
-    },
-    {
-      "id": "frontend_src_tests_audioandvrmengine_test_mockaudiocontext_resume",
-      "label": ".resume()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "code",
-      "norm_label": ".resume()",
-      "source_file": "frontend/src/__tests__/audioAndVrmEngine.test.ts",
-      "source_location": "L355"
-    },
-    {
-      "id": "backend_app_ws_gemini_live_client_create_gemini_live_session",
-      "label": "create_gemini_live_session()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "code",
-      "norm_label": "create_gemini_live_session()",
-      "source_file": "backend/app/ws/gemini_live_client.py",
-      "source_location": "L784"
-    },
-    {
-      "id": "backend_app_ws_gemini_live_client_sanitize_and_lock_transcript_language",
-      "label": "sanitize_and_lock_transcript_language()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "code",
-      "norm_label": "sanitize_and_lock_transcript_language()",
-      "source_file": "backend/app/ws/gemini_live_client.py",
-      "source_location": "L114"
-    },
-    {
-      "id": "backend_tests_test_security_and_prompts_test_sanitize_and_lock_transcript_language_enforces_id_en_and_preserves_tech_terms",
-      "label": "test_sanitize_and_lock_transcript_language_enforces_id_en_and_preserves_tech_terms()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "code",
-      "norm_label": "test_sanitize_and_lock_transcript_language_enforces_id_en_and_preserves_tech_terms()",
-      "source_file": "backend/tests/test_security_and_prompts.py",
-      "source_location": "L145"
     },
     {
       "id": "frontend_src_services_apiclient_cachesessiontoken",
@@ -5162,17 +5162,6 @@
       "norm_label": "services/apiclient.ts",
       "source_file": "frontend/src/services/apiClient.ts",
       "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_services_apiclient_apiclient",
-      "label": "apiClient",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "api.types.ts",
-      "file_type": "code",
-      "norm_label": "apiclient",
-      "source_file": "frontend/src/services/apiClient.ts",
-      "source_location": "L142"
     },
     {
       "id": "frontend_src_services_apiclient_runtimecandidatemeta",
@@ -5316,17 +5305,6 @@
       "norm_label": "api.types.ts",
       "source_file": "frontend/src/types/api.types.ts",
       "source_location": "L1"
-    },
-    {
-      "id": "ref_lucide_react",
-      "label": "lucide-react",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "api.types.ts",
-      "file_type": "concept",
-      "norm_label": "lucide-react",
-      "source_file": "frontend/package.json",
-      "source_location": "L16"
     },
     {
       "id": "alias",
@@ -6429,6 +6407,18 @@
       "source_location": "L229"
     },
     {
+      "id": "prd_3_4_fungsi_4_3d_vrm_avatar_rendering_viseme_lip_sync_non_verbal_expressions",
+      "label": "3.4 Fungsi 4: 3D VRM Avatar Rendering, Viseme Lip-Sync & Non-Verbal Expressions",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "3. Core Functionalities (Deep-Dive Specifications)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.4 fungsi 4: 3d vrm avatar rendering, viseme lip-sync & non-verbal expressions",
+      "source_file": "PRD.md",
+      "source_location": "L256"
+    },
+    {
       "id": "prd_3_5_fungsi_5_interview_stage_progression_time_management",
       "label": "3.5 Fungsi 5: Interview Stage Progression & Time Management",
       "_origin": "ast",
@@ -6439,18 +6429,6 @@
       "norm_label": "3.5 fungsi 5: interview stage progression & time management",
       "source_file": "PRD.md",
       "source_location": "L306"
-    },
-    {
-      "id": "prd_3_6_fungsi_6_automated_transcript_competency_evaluation_report",
-      "label": "3.6 Fungsi 6: Automated Transcript & Competency Evaluation Report",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "3. Core Functionalities (Deep-Dive Specifications)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3.6 fungsi 6: automated transcript & competency evaluation report",
-      "source_file": "PRD.md",
-      "source_location": "L326"
     },
     {
       "id": "prd_3_core_functionalities_deep_dive_specifications",
@@ -6489,16 +6467,16 @@
       "source_location": "L141"
     },
     {
-      "id": "prd_a_pencatatan_transkrip_dua_arah_real_time",
-      "label": "A. Pencatatan Transkrip Dua Arah Real-Time",
+      "id": "prd_a_konfigurasi_scene_kamera_pencahayaan_interview_portrait_framing",
+      "label": "A. Konfigurasi Scene, Kamera & Pencahayaan (Interview Portrait Framing)",
       "_origin": "ast",
       "community": 14,
       "community_name": "3. Core Functionalities (Deep-Dive Specifications)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "a. pencatatan transkrip dua arah real-time",
+      "norm_label": "a. konfigurasi scene, kamera & pencahayaan (interview portrait framing)",
       "source_file": "PRD.md",
-      "source_location": "L328"
+      "source_location": "L260"
     },
     {
       "id": "prd_a_upstream_audio_pipeline_kandidat_browser_audioworklet_backend_relay_gemini_live_api",
@@ -6513,6 +6491,18 @@
       "source_location": "L185"
     },
     {
+      "id": "prd_b_algoritma_real_time_frequency_formant_lip_sync_analysernode_vrm_visemes",
+      "label": "B. Algoritma Real-Time Frequency/Formant Lip-Sync (`AnalyserNode` -> VRM Visemes)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "3. Core Functionalities (Deep-Dive Specifications)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "b. algoritma real-time frequency/formant lip-sync (`analysernode` -> vrm visemes)",
+      "source_file": "PRD.md",
+      "source_location": "L267"
+    },
+    {
       "id": "prd_b_downstream_audio_pipeline_gemini_live_api_backend_relay_browser_audiocontext_gapless_playback",
       "label": "B. Downstream Audio Pipeline (Gemini Live API -> Backend Relay -> Browser `AudioContext` Gapless Playback)",
       "_origin": "ast",
@@ -6523,18 +6513,6 @@
       "norm_label": "b. downstream audio pipeline (gemini live api -> backend relay -> browser `audiocontext` gapless playback)",
       "source_file": "PRD.md",
       "source_location": "L210"
-    },
-    {
-      "id": "prd_b_mesin_evaluasi_pasca_wawancara_post_interview_evaluation_worker",
-      "label": "B. Mesin Evaluasi Pasca-Wawancara (*Post-Interview Evaluation Worker*)",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "3. Core Functionalities (Deep-Dive Specifications)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "b. mesin evaluasi pasca-wawancara (*post-interview evaluation worker*)",
-      "source_file": "PRD.md",
-      "source_location": "L332"
     },
     {
       "id": "prd_b_struktur_template_system_instruction_diinjeksi_ke_liveconnectconfig_system_instruction",
@@ -6549,16 +6527,16 @@
       "source_location": "L148"
     },
     {
-      "id": "prd_c_skema_rubrik_struktur_laporan_evaluasi",
-      "label": "C. Skema Rubrik & Struktur Laporan Evaluasi",
+      "id": "prd_c_state_machine_animasi_non_verbal_avatar",
+      "label": "C. State Machine Animasi Non-Verbal Avatar",
       "_origin": "ast",
       "community": 14,
       "community_name": "3. Core Functionalities (Deep-Dive Specifications)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "c. skema rubrik & struktur laporan evaluasi",
+      "norm_label": "c. state machine animasi non-verbal avatar",
       "source_file": "PRD.md",
-      "source_location": "L338"
+      "source_location": "L293"
     },
     {
       "id": "docs_contracts_database_schema_1_design_principles_id_conventions",
@@ -9225,11 +9203,88 @@
       "source_location": "L311"
     },
     {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim",
+      "label": "VrmProceduralAnim.ts",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "VrmProceduralAnimator",
+      "file_type": "code",
+      "norm_label": "vrmproceduralanim.ts",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_close_sec",
+      "label": "BLINK_CLOSE_SEC",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "VrmProceduralAnimator",
+      "file_type": "code",
+      "norm_label": "blink_close_sec",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_hold_sec",
+      "label": "BLINK_HOLD_SEC",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "VrmProceduralAnimator",
+      "file_type": "code",
+      "norm_label": "blink_hold_sec",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_max_interval_sec",
+      "label": "BLINK_MAX_INTERVAL_SEC",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "VrmProceduralAnimator",
+      "file_type": "code",
+      "norm_label": "blink_max_interval_sec",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_min_interval_sec",
+      "label": "BLINK_MIN_INTERVAL_SEC",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "VrmProceduralAnimator",
+      "file_type": "code",
+      "norm_label": "blink_min_interval_sec",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_open_sec",
+      "label": "BLINK_OPEN_SEC",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "VrmProceduralAnimator",
+      "file_type": "code",
+      "norm_label": "blink_open_sec",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L39"
+    },
+    {
+      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_total_duration_sec",
+      "label": "BLINK_TOTAL_DURATION_SEC",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "VrmProceduralAnimator",
+      "file_type": "code",
+      "norm_label": "blink_total_duration_sec",
+      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
+      "source_location": "L40"
+    },
+    {
       "id": "frontend_public_models_readme",
       "label": "models/README.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "models/readme.md",
@@ -9241,7 +9296,7 @@
       "label": "3D VRM Models Directory (`public/models/`)",
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3d vrm models directory (`public/models/`)",
@@ -9253,7 +9308,7 @@
       "label": "Procedural Humanoid Rig Fallback (60 FPS Guaranteed)",
       "_origin": "ast",
       "community": 3,
-      "community_name": "AvatarEmotion",
+      "community_name": "VrmProceduralAnimator",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "procedural humanoid rig fallback (60 fps guaranteed)",
@@ -10064,17 +10119,6 @@
       "source_location": "L16"
     },
     {
-      "id": "frontend_src_store_useinterviewstore",
-      "label": "useInterviewStore.ts",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "ws.types.ts",
-      "file_type": "code",
-      "norm_label": "useinterviewstore.ts",
-      "source_file": "frontend/src/store/useInterviewStore.ts",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_src_types_ws_types",
       "label": "ws.types.ts",
       "_origin": "ast",
@@ -10669,54 +10713,6 @@
       "source_location": "L98"
     },
     {
-      "id": "prd_3_4_fungsi_4_3d_vrm_avatar_rendering_viseme_lip_sync_non_verbal_expressions",
-      "label": "3.4 Fungsi 4: 3D VRM Avatar Rendering, Viseme Lip-Sync & Non-Verbal Expressions",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "3.4 Fungsi 4: 3D VRM Avatar Rendering, Viseme Lip-Sync & Non-Verbal Expressions",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3.4 fungsi 4: 3d vrm avatar rendering, viseme lip-sync & non-verbal expressions",
-      "source_file": "PRD.md",
-      "source_location": "L256"
-    },
-    {
-      "id": "prd_a_konfigurasi_scene_kamera_pencahayaan_interview_portrait_framing",
-      "label": "A. Konfigurasi Scene, Kamera & Pencahayaan (Interview Portrait Framing)",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "3.4 Fungsi 4: 3D VRM Avatar Rendering, Viseme Lip-Sync & Non-Verbal Expressions",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "a. konfigurasi scene, kamera & pencahayaan (interview portrait framing)",
-      "source_file": "PRD.md",
-      "source_location": "L260"
-    },
-    {
-      "id": "prd_b_algoritma_real_time_frequency_formant_lip_sync_analysernode_vrm_visemes",
-      "label": "B. Algoritma Real-Time Frequency/Formant Lip-Sync (`AnalyserNode` -> VRM Visemes)",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "3.4 Fungsi 4: 3D VRM Avatar Rendering, Viseme Lip-Sync & Non-Verbal Expressions",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "b. algoritma real-time frequency/formant lip-sync (`analysernode` -> vrm visemes)",
-      "source_file": "PRD.md",
-      "source_location": "L267"
-    },
-    {
-      "id": "prd_c_state_machine_animasi_non_verbal_avatar",
-      "label": "C. State Machine Animasi Non-Verbal Avatar",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "3.4 Fungsi 4: 3D VRM Avatar Rendering, Viseme Lip-Sync & Non-Verbal Expressions",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "c. state machine animasi non-verbal avatar",
-      "source_file": "PRD.md",
-      "source_location": "L293"
-    },
-    {
       "id": "docs_plans_2026_10_26_phase_2_frontend_and_standalone_validation_4_verification_criteria_gate_validasi_fase_2",
       "label": "4. Verification Criteria (Gate Validasi Fase 2)",
       "_origin": "ast",
@@ -10727,6 +10723,171 @@
       "norm_label": "4. verification criteria (gate validasi fase 2)",
       "source_file": "docs/plans/2026-10-26-phase-2-frontend-and-standalone-validation.md",
       "source_location": "L52"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_1_objective_context",
+      "label": "1. Objective & Context",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. objective & context",
+      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_2_scope_key_decisions",
+      "label": "2. Scope & Key Decisions",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. scope & key decisions",
+      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
+      "source_location": "L26"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_3_action_plan_checklist",
+      "label": "3. Action Plan & Checklist",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. action plan & checklist",
+      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
+      "source_location": "L42"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_4_verification_criteria",
+      "label": "4. Verification Criteria",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. verification criteria",
+      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
+      "source_location": "L51"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_5_implementation_log_actual_changes",
+      "label": "5. Implementation Log & Actual Changes",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. implementation log & actual changes",
+      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
+      "source_location": "L59"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_plan_fix_continuous_ai_voice_playback_anti_echo_cooldown_3d_vrm_avatar_visibility_indonesian_english_language_lock",
+      "label": "Plan: Fix Continuous AI Voice Playback (Anti-Echo Cooldown), 3D VRM Avatar Visibility & Indonesian/English Language Lock",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "plan: fix continuous ai voice playback (anti-echo cooldown), 3d vrm avatar visibility & indonesian/english language lock",
+      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_app_ws_gemini_live_client_rationale_115",
+      "label": "Lock transcript text to Bahasa Indonesia & English (Latin script), stripping\u2026",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "rationale",
+      "norm_label": "lock transcript text to bahasa indonesia & english (latin script), stripping...",
+      "source_file": "backend/app/ws/gemini_live_client.py",
+      "source_location": "L115"
+    },
+    {
+      "id": "backend_app_ws_gemini_live_client_rationale_791",
+      "label": "Create either the deterministic session or live Gemini session based on\u2026",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "rationale",
+      "norm_label": "create either the deterministic session or live gemini session based on...",
+      "source_file": "backend/app/ws/gemini_live_client.py",
+      "source_location": "L791"
+    },
+    {
+      "id": "backend_tests_test_security_and_prompts_rationale_146",
+      "label": "Verify non-Latin ASR hallucinations and Spanish/Portuguese greetings are\u2026",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PcmStreamPlayer",
+      "file_type": "rationale",
+      "norm_label": "verify non-latin asr hallucinations and spanish/portuguese greetings are...",
+      "source_file": "backend/tests/test_security_and_prompts.py",
+      "source_location": "L146"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_2_scope_key_decisions",
+      "label": "2. Scope & Key Decisions",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. scope & key decisions",
+      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_3_action_plan_checklist",
+      "label": "3. Action Plan & Checklist",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. action plan & checklist",
+      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
+      "source_location": "L37"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_4_verification_criteria",
+      "label": "4. Verification Criteria",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. verification criteria",
+      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
+      "source_location": "L47"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_5_implementation_log_actual_changes",
+      "label": "5. Implementation Log & Actual Changes",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. implementation log & actual changes",
+      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
+      "source_location": "L54"
+    },
+    {
+      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_plan_fix_ai_interviewer_audio_playback_cutoffs_echo_barge_in_loop_smooth_3d_vrm_animation",
+      "label": "Plan: Fix AI Interviewer Audio Playback Cutoffs (Echo Barge-In Loop) & Smooth 3D VRM Animation",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "plan: fix ai interviewer audio playback cutoffs (echo barge-in loop) & smooth 3d vrm animation",
+      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
+      "source_location": "L1"
     },
     {
       "id": "docs_plans_2026_10_27_frontend_audio_and_vrm_fixes_1_objective_context",
@@ -10777,18 +10938,6 @@
       "source_location": "L45"
     },
     {
-      "id": "docs_plans_2026_10_27_frontend_audio_and_vrm_fixes_5_implementation_log_actual_changes",
-      "label": "5. Implementation Log & Actual Changes",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "MicCaptureManager",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. implementation log & actual changes",
-      "source_file": "docs/plans/2026-10-27-frontend-audio-and-vrm-fixes.md",
-      "source_location": "L54"
-    },
-    {
       "id": "docs_plans_2026_10_27_frontend_audio_and_vrm_fixes_plan_frontend_audio_capture_lobby_mic_meter_3d_vrm_1_0_rendering_fixes",
       "label": "Plan: Frontend Audio Capture, Lobby Mic Meter & 3D VRM 1.0 Rendering Fixes",
       "_origin": "ast",
@@ -10801,64 +10950,124 @@
       "source_location": "L1"
     },
     {
-      "id": "prd_9_phased_implementation_roadmap_acceptance_criteria",
-      "label": "9. Phased Implementation Roadmap & Acceptance Criteria",
+      "id": "docs_state_1_current_focus_next_steps_contract_first_engineering_workflow",
+      "label": "1. Current Focus & Next Steps (Contract-First Engineering Workflow)",
       "_origin": "ast",
-      "community": 41,
-      "community_name": "9. Phased Implementation Roadmap & Acceptance Criteria",
+      "community": 40,
+      "community_name": "MicCaptureManager",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "9. phased implementation roadmap & acceptance criteria",
-      "source_file": "PRD.md",
-      "source_location": "L841"
+      "norm_label": "1. current focus & next steps (contract-first engineering workflow)",
+      "source_file": "docs/STATE.md",
+      "source_location": "L9"
     },
     {
-      "id": "prd_milestone_1_core_websocket_relay_full_duplex_voice_pipeline",
-      "label": "Milestone 1: Core WebSocket Relay & Full-Duplex Voice Pipeline",
+      "id": "docs_state_2_architecture_decisions_log_docs_decisions",
+      "label": "2. Architecture Decisions Log (`docs/decisions/`)",
       "_origin": "ast",
-      "community": 41,
-      "community_name": "9. Phased Implementation Roadmap & Acceptance Criteria",
+      "community": 40,
+      "community_name": "MicCaptureManager",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "milestone 1: core websocket relay & full-duplex voice pipeline",
-      "source_file": "PRD.md",
-      "source_location": "L845"
+      "norm_label": "2. architecture decisions log (`docs/decisions/`)",
+      "source_file": "docs/STATE.md",
+      "source_location": "L30"
     },
     {
-      "id": "prd_milestone_2_3d_vrm_avatar_engine_viseme_lip_sync_non_verbal_state_machine",
-      "label": "Milestone 2: 3D VRM Avatar Engine, Viseme Lip-Sync & Non-Verbal State Machine",
+      "id": "docs_state_3_system_contracts_docs_contracts_100_locked",
+      "label": "3. System Contracts (`docs/contracts/`) \u2014 100% Locked",
       "_origin": "ast",
-      "community": 41,
-      "community_name": "9. Phased Implementation Roadmap & Acceptance Criteria",
+      "community": 40,
+      "community_name": "MicCaptureManager",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "milestone 2: 3d vrm avatar engine, viseme lip-sync & non-verbal state machine",
-      "source_file": "PRD.md",
-      "source_location": "L855"
+      "norm_label": "3. system contracts (`docs/contracts/`) \u2014 100% locked",
+      "source_file": "docs/STATE.md",
+      "source_location": "L40"
     },
     {
-      "id": "prd_milestone_3_dynamic_context_injection_interview_stage_controller_pre_interview_lobby",
-      "label": "Milestone 3: Dynamic Context Injection, Interview Stage Controller & Pre-Interview Lobby",
+      "id": "docs_state_4_plans_implementation_tracker_docs_plans",
+      "label": "4. Plans & Implementation Tracker (`docs/plans/`)",
       "_origin": "ast",
-      "community": 41,
-      "community_name": "9. Phased Implementation Roadmap & Acceptance Criteria",
+      "community": 40,
+      "community_name": "MicCaptureManager",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "milestone 3: dynamic context injection, interview stage controller & pre-interview lobby",
-      "source_file": "PRD.md",
-      "source_location": "L865"
+      "norm_label": "4. plans & implementation tracker (`docs/plans/`)",
+      "source_file": "docs/STATE.md",
+      "source_location": "L51"
     },
     {
-      "id": "prd_milestone_4_persistence_post_interview_evaluation_engine_gcp_containerization",
-      "label": "Milestone 4: Persistence, Post-Interview Evaluation Engine & GCP Containerization",
+      "id": "docs_state_5_changelog_recent_implementation_history",
+      "label": "5. Changelog / Recent Implementation History",
       "_origin": "ast",
-      "community": 41,
-      "community_name": "9. Phased Implementation Roadmap & Acceptance Criteria",
+      "community": 40,
+      "community_name": "MicCaptureManager",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "milestone 4: persistence, post-interview evaluation engine & gcp containerization",
+      "norm_label": "5. changelog / recent implementation history",
+      "source_file": "docs/STATE.md",
+      "source_location": "L69"
+    },
+    {
+      "id": "docs_state_project_state_implementation_tracker_state_md",
+      "label": "Project State & Implementation Tracker (`STATE.md`)",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "MicCaptureManager",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "project state & implementation tracker (`state.md`)",
+      "source_file": "docs/STATE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "prd_3_6_fungsi_6_automated_transcript_competency_evaluation_report",
+      "label": "3.6 Fungsi 6: Automated Transcript & Competency Evaluation Report",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "3.6 Fungsi 6: Automated Transcript & Competency Evaluation Report",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.6 fungsi 6: automated transcript & competency evaluation report",
       "source_file": "PRD.md",
-      "source_location": "L874"
+      "source_location": "L326"
+    },
+    {
+      "id": "prd_a_pencatatan_transkrip_dua_arah_real_time",
+      "label": "A. Pencatatan Transkrip Dua Arah Real-Time",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "3.6 Fungsi 6: Automated Transcript & Competency Evaluation Report",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "a. pencatatan transkrip dua arah real-time",
+      "source_file": "PRD.md",
+      "source_location": "L328"
+    },
+    {
+      "id": "prd_b_mesin_evaluasi_pasca_wawancara_post_interview_evaluation_worker",
+      "label": "B. Mesin Evaluasi Pasca-Wawancara (*Post-Interview Evaluation Worker*)",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "3.6 Fungsi 6: Automated Transcript & Competency Evaluation Report",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "b. mesin evaluasi pasca-wawancara (*post-interview evaluation worker*)",
+      "source_file": "PRD.md",
+      "source_location": "L332"
+    },
+    {
+      "id": "prd_c_skema_rubrik_struktur_laporan_evaluasi",
+      "label": "C. Skema Rubrik & Struktur Laporan Evaluasi",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "3.6 Fungsi 6: Automated Transcript & Competency Evaluation Report",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "c. skema rubrik & struktur laporan evaluasi",
+      "source_file": "PRD.md",
+      "source_location": "L338"
     },
     {
       "id": "backend_tests_test_ws_relay",
@@ -11371,18 +11580,6 @@
       "source_location": "L490"
     },
     {
-      "id": "prd_5_2_websocket_relay_endpoint_message_contract",
-      "label": "5.2 WebSocket Relay Endpoint & Message Contract",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "5. Backend Specifications (WebSocket Relay Protocol, APIs & Guardrails)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.2 websocket relay endpoint & message contract",
-      "source_file": "PRD.md",
-      "source_location": "L504"
-    },
-    {
       "id": "prd_5_3_backend_dual_loop_concurrency_architecture_asyncio_taskgroup",
       "label": "5.3 Backend Dual-Loop Concurrency Architecture (`asyncio.TaskGroup`)",
       "_origin": "ast",
@@ -11419,11 +11616,95 @@
       "source_location": "L488"
     },
     {
+      "id": "docs_plans_2026_10_27_frontend_audio_and_vrm_fixes_5_implementation_log_actual_changes",
+      "label": "5. Implementation Log & Actual Changes",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. implementation log & actual changes",
+      "source_file": "docs/plans/2026-10-27-frontend-audio-and-vrm-fixes.md",
+      "source_location": "L54"
+    },
+    {
+      "id": "prd_5_2_websocket_relay_endpoint_message_contract",
+      "label": "5.2 WebSocket Relay Endpoint & Message Contract",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.2 websocket relay endpoint & message contract",
+      "source_file": "PRD.md",
+      "source_location": "L504"
+    },
+    {
+      "id": "prd_9_phased_implementation_roadmap_acceptance_criteria",
+      "label": "9. Phased Implementation Roadmap & Acceptance Criteria",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9. phased implementation roadmap & acceptance criteria",
+      "source_file": "PRD.md",
+      "source_location": "L841"
+    },
+    {
+      "id": "prd_milestone_1_core_websocket_relay_full_duplex_voice_pipeline",
+      "label": "Milestone 1: Core WebSocket Relay & Full-Duplex Voice Pipeline",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "milestone 1: core websocket relay & full-duplex voice pipeline",
+      "source_file": "PRD.md",
+      "source_location": "L845"
+    },
+    {
+      "id": "prd_milestone_2_3d_vrm_avatar_engine_viseme_lip_sync_non_verbal_state_machine",
+      "label": "Milestone 2: 3D VRM Avatar Engine, Viseme Lip-Sync & Non-Verbal State Machine",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "milestone 2: 3d vrm avatar engine, viseme lip-sync & non-verbal state machine",
+      "source_file": "PRD.md",
+      "source_location": "L855"
+    },
+    {
+      "id": "prd_milestone_3_dynamic_context_injection_interview_stage_controller_pre_interview_lobby",
+      "label": "Milestone 3: Dynamic Context Injection, Interview Stage Controller & Pre-Interview Lobby",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "milestone 3: dynamic context injection, interview stage controller & pre-interview lobby",
+      "source_file": "PRD.md",
+      "source_location": "L865"
+    },
+    {
+      "id": "prd_milestone_4_persistence_post_interview_evaluation_engine_gcp_containerization",
+      "label": "Milestone 4: Persistence, Post-Interview Evaluation Engine & GCP Containerization",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "milestone 4: persistence, post-interview evaluation engine & gcp containerization",
+      "source_file": "PRD.md",
+      "source_location": "L874"
+    },
+    {
       "id": "prd_tabel_kontrak_pesan_websocket_backend_relay_client",
       "label": "Tabel Kontrak Pesan WebSocket: Backend Relay -> Client",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "5. Backend Specifications (WebSocket Relay Protocol, APIs & Guardrails)",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "tabel kontrak pesan websocket: backend relay -> client",
@@ -11434,90 +11715,13 @@
       "id": "prd_tabel_kontrak_pesan_websocket_client_backend_relay",
       "label": "Tabel Kontrak Pesan WebSocket: Client -> Backend Relay",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "5. Backend Specifications (WebSocket Relay Protocol, APIs & Guardrails)",
+      "community": 5,
+      "community_name": "VrmAvatarEngine",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "tabel kontrak pesan websocket: client -> backend relay",
       "source_file": "PRD.md",
       "source_location": "L517"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim",
-      "label": "VrmProceduralAnim.ts",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "vrmproceduralanim.ts",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_close_sec",
-      "label": "BLINK_CLOSE_SEC",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "blink_close_sec",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L37"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_hold_sec",
-      "label": "BLINK_HOLD_SEC",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "blink_hold_sec",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L38"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_max_interval_sec",
-      "label": "BLINK_MAX_INTERVAL_SEC",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "blink_max_interval_sec",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L36"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_min_interval_sec",
-      "label": "BLINK_MIN_INTERVAL_SEC",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "blink_min_interval_sec",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L35"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_open_sec",
-      "label": "BLINK_OPEN_SEC",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "blink_open_sec",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L39"
-    },
-    {
-      "id": "frontend_src_engine_vrm_vrmproceduralanim_blink_total_duration_sec",
-      "label": "BLINK_TOTAL_DURATION_SEC",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "VrmProceduralAnim.ts",
-      "file_type": "code",
-      "norm_label": "blink_total_duration_sec",
-      "source_file": "frontend/src/engine/vrm/VrmProceduralAnim.ts",
-      "source_location": "L40"
     },
     {
       "id": "backend_app_services_evaluator_service_py_async_sessionmaker",
@@ -12124,54 +12328,6 @@
       "source_location": "L711"
     },
     {
-      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_3_action_plan_checklist",
-      "label": "3. Action Plan & Checklist",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": "Plan: Fix AI Interviewer Audio Playback Cutoffs (Echo Barge-In Loop) & Smooth 3D VRM Animation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. action plan & checklist",
-      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
-      "source_location": "L37"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_4_verification_criteria",
-      "label": "4. Verification Criteria",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": "Plan: Fix AI Interviewer Audio Playback Cutoffs (Echo Barge-In Loop) & Smooth 3D VRM Animation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. verification criteria",
-      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
-      "source_location": "L47"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_5_implementation_log_actual_changes",
-      "label": "5. Implementation Log & Actual Changes",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": "Plan: Fix AI Interviewer Audio Playback Cutoffs (Echo Barge-In Loop) & Smooth 3D VRM Animation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. implementation log & actual changes",
-      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
-      "source_location": "L54"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_plan_fix_ai_interviewer_audio_playback_cutoffs_echo_barge_in_loop_smooth_3d_vrm_animation",
-      "label": "Plan: Fix AI Interviewer Audio Playback Cutoffs (Echo Barge-In Loop) & Smooth 3D VRM Animation",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": "Plan: Fix AI Interviewer Audio Playback Cutoffs (Echo Barge-In Loop) & Smooth 3D VRM Animation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "plan: fix ai interviewer audio playback cutoffs (echo barge-in loop) & smooth 3d vrm animation",
-      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_src_app",
       "label": "App.tsx",
       "_origin": "ast",
@@ -12238,6 +12394,28 @@
       "source_location": "L16"
     },
     {
+      "id": "frontend_src_services_apiclient_apiclient",
+      "label": "apiClient",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "InterviewRoomPage",
+      "file_type": "code",
+      "norm_label": "apiclient",
+      "source_file": "frontend/src/services/apiClient.ts",
+      "source_location": "L142"
+    },
+    {
+      "id": "frontend_src_store_useinterviewstore",
+      "label": "useInterviewStore.ts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "InterviewRoomPage",
+      "file_type": "code",
+      "norm_label": "useinterviewstore.ts",
+      "source_file": "frontend/src/store/useInterviewStore.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_store_useinterviewstore_useinterviewstore",
       "label": "useInterviewStore",
       "_origin": "ast",
@@ -12247,6 +12425,17 @@
       "norm_label": "useinterviewstore",
       "source_file": "frontend/src/store/useInterviewStore.ts",
       "source_location": "L81"
+    },
+    {
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "InterviewRoomPage",
+      "file_type": "concept",
+      "norm_label": "lucide-react",
+      "source_file": "frontend/package.json",
+      "source_location": "L16"
     },
     {
       "id": "ref_react",
@@ -13347,90 +13536,6 @@
       "source_location": ""
     },
     {
-      "id": "docs_plans_2026_10_27_fix_ai_voice_and_vrm_animation_2_scope_key_decisions",
-      "label": "2. Scope & Key Decisions",
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. scope & key decisions",
-      "source_file": "docs/plans/2026-10-27-fix-ai-voice-and-vrm-animation.md",
-      "source_location": "L22"
-    },
-    {
-      "id": "docs_state_1_current_focus_next_steps_contract_first_engineering_workflow",
-      "label": "1. Current Focus & Next Steps (Contract-First Engineering Workflow)",
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. current focus & next steps (contract-first engineering workflow)",
-      "source_file": "docs/STATE.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "docs_state_2_architecture_decisions_log_docs_decisions",
-      "label": "2. Architecture Decisions Log (`docs/decisions/`)",
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. architecture decisions log (`docs/decisions/`)",
-      "source_file": "docs/STATE.md",
-      "source_location": "L30"
-    },
-    {
-      "id": "docs_state_3_system_contracts_docs_contracts_100_locked",
-      "label": "3. System Contracts (`docs/contracts/`) \u2014 100% Locked",
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. system contracts (`docs/contracts/`) \u2014 100% locked",
-      "source_file": "docs/STATE.md",
-      "source_location": "L40"
-    },
-    {
-      "id": "docs_state_4_plans_implementation_tracker_docs_plans",
-      "label": "4. Plans & Implementation Tracker (`docs/plans/`)",
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. plans & implementation tracker (`docs/plans/`)",
-      "source_file": "docs/STATE.md",
-      "source_location": "L51"
-    },
-    {
-      "id": "docs_state_5_changelog_recent_implementation_history",
-      "label": "5. Changelog / Recent Implementation History",
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. changelog / recent implementation history",
-      "source_file": "docs/STATE.md",
-      "source_location": "L69"
-    },
-    {
-      "id": "docs_state_project_state_implementation_tracker_state_md",
-      "label": "Project State & Implementation Tracker (`STATE.md`)",
-      "_origin": "ast",
-      "community": 76,
-      "community_name": "5. Changelog / Recent Implementation History",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "project state & implementation tracker (`state.md`)",
-      "source_file": "docs/STATE.md",
-      "source_location": "L1"
-    },
-    {
       "id": "backend_app_services_auth_jwt",
       "label": "auth_jwt.py",
       "_origin": "ast",
@@ -13451,111 +13556,6 @@
       "norm_label": "compatibility re-export alias for auth_token.",
       "source_file": "backend/app/services/auth_jwt.py",
       "source_location": "L1"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_1_objective_context",
-      "label": "1. Objective & Context",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. objective & context",
-      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_2_scope_key_decisions",
-      "label": "2. Scope & Key Decisions",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. scope & key decisions",
-      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
-      "source_location": "L26"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_3_action_plan_checklist",
-      "label": "3. Action Plan & Checklist",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. action plan & checklist",
-      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
-      "source_location": "L42"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_4_verification_criteria",
-      "label": "4. Verification Criteria",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. verification criteria",
-      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
-      "source_location": "L51"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_5_implementation_log_actual_changes",
-      "label": "5. Implementation Log & Actual Changes",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. implementation log & actual changes",
-      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
-      "source_location": "L59"
-    },
-    {
-      "id": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_plan_fix_continuous_ai_voice_playback_anti_echo_cooldown_3d_vrm_avatar_visibility_indonesian_english_language_lock",
-      "label": "Plan: Fix Continuous AI Voice Playback (Anti-Echo Cooldown), 3D VRM Avatar Visibility & Indonesian/English Language Lock",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "plan: fix continuous ai voice playback (anti-echo cooldown), 3d vrm avatar visibility & indonesian/english language lock",
-      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_app_ws_gemini_live_client_rationale_115",
-      "label": "Lock transcript text to Bahasa Indonesia & English (Latin script), stripping\u2026",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "rationale",
-      "norm_label": "lock transcript text to bahasa indonesia & english (latin script), stripping...",
-      "source_file": "backend/app/ws/gemini_live_client.py",
-      "source_location": "L115"
-    },
-    {
-      "id": "backend_app_ws_gemini_live_client_rationale_791",
-      "label": "Create either the deterministic session or live Gemini session based on\u2026",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "rationale",
-      "norm_label": "create either the deterministic session or live gemini session based on...",
-      "source_file": "backend/app/ws/gemini_live_client.py",
-      "source_location": "L791"
-    },
-    {
-      "id": "backend_tests_test_security_and_prompts_rationale_146",
-      "label": "Verify non-Latin ASR hallucinations and Spanish/Portuguese greetings are\u2026",
-      "_origin": "ast",
-      "community": 78,
-      "community_name": "create_gemini_live_session",
-      "file_type": "rationale",
-      "norm_label": "verify non-latin asr hallucinations and spanish/portuguese greetings are...",
-      "source_file": "backend/tests/test_security_and_prompts.py",
-      "source_location": "L146"
     },
     {
       "id": "backend_app_services_evaluation_worker",
@@ -17712,7 +17712,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L774",
+      "source_location": "L778",
       "weight": 1.0
     },
     {
@@ -17724,7 +17724,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L895",
+      "source_location": "L899",
       "weight": 1.0
     },
     {
@@ -17928,7 +17928,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L141",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -17940,7 +17940,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L203",
+      "source_location": "L206",
       "weight": 1.0
     },
     {
@@ -17952,7 +17952,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L223",
+      "source_location": "L226",
       "weight": 1.0
     },
     {
@@ -17964,7 +17964,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L293",
+      "source_location": "L296",
       "weight": 1.0
     },
     {
@@ -17988,7 +17988,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L477",
+      "source_location": "L479",
       "weight": 1.0
     },
     {
@@ -18000,7 +18000,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L691",
+      "source_location": "L721",
       "weight": 1.0
     },
     {
@@ -28442,7 +28442,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L406",
+      "source_location": "L407",
       "weight": 1.0
     },
     {
@@ -28454,7 +28454,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L406",
+      "source_location": "L407",
       "weight": 1.0
     },
     {
@@ -28466,7 +28466,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L759",
+      "source_location": "L763",
       "weight": 1.0
     },
     {
@@ -28478,7 +28478,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L751",
+      "source_location": "L755",
       "weight": 1.0
     },
     {
@@ -28490,7 +28490,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L751",
+      "source_location": "L755",
       "weight": 1.0
     },
     {
@@ -28826,7 +28826,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L780",
+      "source_location": "L784",
       "weight": 1.0
     },
     {
@@ -28838,7 +28838,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L780",
+      "source_location": "L784",
       "weight": 1.0
     },
     {
@@ -28850,7 +28850,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L780",
+      "source_location": "L784",
       "weight": 1.0
     },
     {
@@ -38373,7 +38373,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L118",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -38384,7 +38384,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L385",
+      "source_location": "L386",
       "weight": 1.0
     },
     {
@@ -38395,7 +38395,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L406",
+      "source_location": "L407",
       "weight": 1.0
     },
     {
@@ -38406,7 +38406,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L556",
+      "source_location": "L557",
       "weight": 1.0
     },
     {
@@ -38428,7 +38428,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L746",
+      "source_location": "L750",
       "weight": 1.0
     },
     {
@@ -38439,18 +38439,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L751",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
-      "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setavataremotion",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L759",
+      "source_location": "L755",
       "weight": 1.0
     },
     {
@@ -38466,7 +38455,7 @@
     },
     {
       "source": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
-      "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setcandidatevoiceactive",
+      "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setavataremotion",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -38477,7 +38466,7 @@
     },
     {
       "source": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
-      "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_startloop",
+      "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_setcandidatevoiceactive",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -38488,13 +38477,24 @@
     },
     {
       "source": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
+      "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_startloop",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
+      "source_location": "L771",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
       "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine_stepframe",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L780",
+      "source_location": "L784",
       "weight": 1.0
     },
     {
@@ -38505,7 +38505,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L917",
+      "source_location": "L921",
       "weight": 1.0
     },
     {
@@ -38516,7 +38516,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L921",
+      "source_location": "L925",
       "weight": 1.0
     },
     {
@@ -42752,7 +42752,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L584",
+      "source_location": "L585",
       "weight": 1.0
     },
     {
@@ -42764,7 +42764,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L760",
+      "source_location": "L764",
       "weight": 1.0
     },
     {
@@ -42776,7 +42776,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L752",
+      "source_location": "L756",
       "weight": 1.0
     },
     {
@@ -42788,7 +42788,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L755",
+      "source_location": "L759",
       "weight": 1.0
     },
     {
@@ -42800,7 +42800,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L785",
+      "source_location": "L789",
       "weight": 1.0
     },
     {
@@ -42812,7 +42812,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L789",
+      "source_location": "L793",
       "weight": 1.0
     },
     {
@@ -42824,7 +42824,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L797",
+      "source_location": "L801",
       "weight": 1.0
     },
     {
@@ -42836,7 +42836,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L798",
+      "source_location": "L802",
       "weight": 1.0
     },
     {
@@ -42848,7 +42848,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/engine/vrm/VrmAvatarEngine.ts",
-      "source_location": "L799",
+      "source_location": "L803",
       "weight": 1.0
     },
     {
@@ -42860,7 +42860,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L222",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -42872,7 +42872,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L260",
+      "source_location": "L263",
       "weight": 1.0
     },
     {
@@ -42884,7 +42884,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L262",
+      "source_location": "L265",
       "weight": 1.0
     },
     {
@@ -42896,7 +42896,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L268",
+      "source_location": "L271",
       "weight": 1.0
     },
     {
@@ -42908,7 +42908,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L295",
+      "source_location": "L298",
       "weight": 1.0
     },
     {
@@ -42920,7 +42920,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L296",
+      "source_location": "L299",
       "weight": 1.0
     },
     {
@@ -42932,7 +42932,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L297",
+      "source_location": "L300",
       "weight": 1.0
     },
     {
@@ -42956,7 +42956,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L315",
+      "source_location": "L314",
       "weight": 1.0
     },
     {
@@ -42968,7 +42968,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "frontend/src/pages/InterviewRoomPage.tsx",
-      "source_location": "L331",
+      "source_location": "L330",
       "weight": 1.0
     },
     {
@@ -43932,6 +43932,18 @@
       "weight": 1.0
     },
     {
+      "source": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_5_implementation_log_actual_changes",
+      "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "VrmAvatarEngine",
+      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
       "source": "docs_plans_2026_10_27_frontend_audio_and_vrm_fixes_2_scope_key_decisions",
       "target": "frontend_src_engine_vrm_vrmavatarengine_vrmavatarengine",
       "relation": "references",
@@ -44276,7 +44288,7 @@
       "confidence_score": 0.95,
       "context": "mapRmsToMicLevelPct",
       "source_file": "docs/STATE.md",
-      "source_location": "L78",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -44541,18 +44553,6 @@
       "context": "vrm.update",
       "source_file": "docs/STATE.md",
       "source_location": "L63",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_plans_2026_10_27_fix_avatar_visibility_and_language_lock_5_implementation_log_actual_changes",
-      "target": "frontend_src_services_wsclient_interviewwsclient_connect",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "context": "wsClient.connect()",
-      "source_file": "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md",
-      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -46186,5 +46186,6 @@
       "weight": 0.8
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "3f58e8d00b7cd1a5ebf003074192e76a018c1de7"
 }

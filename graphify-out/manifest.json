@@ -36,9 +36,9 @@
     "semantic_hash": "64c763af45a5c0c80e072649ee5570c6"
   },
   "docs/STATE.md": {
-    "mtime": 1793081834.325588,
-    "seen": 1793082897.5522788,
-    "ast_hash": "1e5a57f4b7e063fbac080c99101adacd",
+    "mtime": 1793082945.7076244,
+    "seen": 1793087372.9858837,
+    "ast_hash": "0df9aa343df448352965169eaabe430a",
     "semantic_hash": ""
   },
   "docs/contracts/README.md": {
@@ -660,15 +660,39 @@
     "semantic_hash": ""
   },
   "docs/plans/2026-10-27-fix-avatar-visibility-and-language-lock.md": {
-    "mtime": 1793081815.677267,
-    "seen": 1793082897.552315,
-    "ast_hash": "8dbb5b948f8c62c76da6c0cd156b019f",
+    "mtime": 1793082945.6916242,
+    "seen": 1793087372.9859238,
+    "ast_hash": "51e4f8d5aafc8eb67a9cac368954b63a",
     "semantic_hash": ""
   },
   "[PROVE]_AI_Not_Visible.jpg": {
     "mtime": 1793079169.184177,
     "seen": 1793080382.5995102,
     "ast_hash": "7ff1f872983501e39d979887ffabfff0",
+    "semantic_hash": ""
+  },
+  "scripts/docker-entrypoint.sh": {
+    "mtime": 1793086583.269148,
+    "seen": 1793087372.9858503,
+    "ast_hash": "d5c41f0f29bcd68774236118fcf6109a",
+    "semantic_hash": ""
+  },
+  "scripts/seed_demo_session.py": {
+    "mtime": 1793087139.4177287,
+    "seen": 1793087372.9858534,
+    "ast_hash": "391330ee01e7318eb833208d603b0ea7",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-005-unified-cloud-run-deployment.md": {
+    "mtime": 1793086318.9510589,
+    "seen": 1793087372.9859066,
+    "ast_hash": "ec92c4da43816f5feee8ad55c90e7718",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-10-27-cloud-run-deployment.md": {
+    "mtime": 1793086274.7020278,
+    "seen": 1793087372.9859195,
+    "ast_hash": "eb5b87ae024dcb57c5ad891113cf01c4",
     "semantic_hash": ""
   }
 }

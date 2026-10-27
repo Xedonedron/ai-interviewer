@@ -1,8 +1,9 @@
 # Project State & Implementation Tracker (`STATE.md`)
 
 - **Last Updated:** 2026-10-27
-- **Current Phase:** **ALL 4 PHASES 100% COMPLETED + Warm Minimalist UI Redesign (`DESIGN.md` & `ADR-003`) + Vertex AI Live Audio & Cost Guardrails (`ADR-004`) + Multi-Turn AI Voice Anti-Echo Playback Window, 3D VRM 1.0 Visibility & Strict ID/EN Language Lock + New Employee Template (`Data Platform & AI Systems Engineer`)**
-- **Knowledge Graph Status:** Active & Synchronized (`graphify-out/graph.json` — 1,277 nodes, 2,710 edges, 81 communities)
+- **Current Phase:** **DEPLOYED TO GOOGLE CLOUD RUN (LIVE) + Unified Single-Container Architecture (`ADR-005`) + Warm Minimalist UI (`DESIGN.md` & `ADR-003`) + Vertex AI Live Audio & Cost Guardrails (`ADR-004`) + Multi-Turn AI Voice, 3D VRM 1.0 Visibility & Strict ID/EN Language Lock + Template Nixon Daniel**
+- **Knowledge Graph Status:** Active & Synchronized (`graphify-out/graph.json` — 1,304 nodes, 2,737 edges, 83 communities)
+- **Live Cloud Run URL:** `https://ai-interviewer-800933197735.asia-southeast2.run.app`
 
 ---
 
@@ -34,6 +35,7 @@ Seluruh spesifikasi di **[PRD.md](../PRD.md)** dan **[ARCHITECTURE_AND_WORKFLOW.
 | [ADR-002](./decisions/ADR-002-backend-tech-stack-and-session-protocol.md) | Backend Tech Stack (Python FastAPI + `uvloop`), Hybrid WebSocket Framing (Binary PCM + JSON) & PostgreSQL Session State | `Accepted` | 2026-10-26 |
 | [ADR-003](./decisions/ADR-003-warm-minimalist-design-system.md) | Warm Minimalist Design System (`DESIGN.md`), Role-Separated Navigation & Resizable Split-Pane Interview Room | `Accepted` | 2026-10-27 |
 | [ADR-004](./decisions/ADR-004-vertex-ai-live-audio-and-cost-guardrails.md) | Vertex AI Gemini Multimodal Live API (`gemini-live-2.5-flash-native-audio`) via ADC & Billing Guardrails | `Accepted` | 2026-10-27 |
+| [ADR-005](./decisions/ADR-005-unified-cloud-run-deployment.md) | Unified Single-Container Google Cloud Run Deployment Architecture (Nginx + Uvicorn + 3D VRM + Vertex AI ADC) | `Accepted` | 2026-10-27 |
 
 ---
 
@@ -63,10 +65,26 @@ Seluruh spesifikasi di **[PRD.md](../PRD.md)** dan **[ARCHITECTURE_AND_WORKFLOW.
 | 2026-10-27 | [2026-10-27-fix-ai-voice-and-vrm-animation.md](./plans/2026-10-27-fix-ai-voice-and-vrm-animation.md) | `Completed` | Perbaikan suara AI terputus akibat *false echo barge-in* (`_ai_speaking` anti-echo gate di `gemini_live_client.py`, de-duplikasi `AvatarStateFrame` di `session_orchestrator.py`, penghapusan auto-flush `sendBargeIn` di `InterviewRoomPage.tsx`) dan penghalusan animasi 3D VRM 60 FPS (penghapusan 60 FPS Zustand re-render flood, *exponential bone damping* di `VrmProceduralAnim.ts`, serta *timestep clamping* `vrm.update` di `VrmAvatarEngine.ts`). |
 | 2026-10-27 | [2026-10-27-new-employee-template-and-background-services.md](./plans/2026-10-27-new-employee-template-and-background-services.md) | `Completed` | Menjalankan Backend (`0.0.0.0:8010`) & Frontend Vite (`0.0.0.0:5173`) di background, memperbarui template karyawan baru (**Nixon Daniel — Data Platform & AI Systems Engineer — Smartnet Magna Global**) beserta rubrik kompetensi BigQuery Medallion / Applied AI RAG / Greenplum MPP di `mockFixtures.ts` & `cv_sanitizer.py`, serta melakukan *seeding* sesi live ke database (`ses_01m5xvgdc0ykwhcfzbs9a08nvc`). |
 | 2026-10-27 | [2026-10-27-fix-avatar-visibility-and-language-lock.md](./plans/2026-10-27-fix-avatar-visibility-and-language-lock.md) | `Completed` | Memperbaiki suara AI yang hilang setelah giliran pertama (pelacakan durasi pemutaran aktual `_ai_playback_ends_at` + supresi false `sc.interrupted` di `gemini_live_client.py` + auto-unduck di `PcmStreamPlayer.ts`), memperbaiki visibilitas 3D VRM 1.0 `alya.vrm` (penghapusan `combineSkeletons`, deduplikasi `loadVrmModel`, isolasi StrictMode `WebGLRenderer`, dan selector Zustand granular di `InterviewRoomPage.tsx`), serta mengunci bahasa percakapan & transkrip ke Bahasa Indonesia (`id-ID`) & Bahasa Inggris (`en-US`). |
+| 2026-10-27 | [2026-10-27-cloud-run-deployment.md](./plans/2026-10-27-cloud-run-deployment.md) | `Completed` | Deploy sistem ke Google Cloud Run (`https://ai-interviewer-800933197735.asia-southeast2.run.app`) dengan arsitektur Unified Single-Container (mengikuti pola Primecare), Nginx dynamic `$PORT` proxy, auto-seeder kandidat Nixon Daniel, dan sinkronisasi `graphify update .`. |
 
 ---
 
 ## 5. Changelog / Recent Implementation History
+- **2026-10-27 (Session 13 — Unified Single-Container Google Cloud Run Deployment [COMPLETED & LIVE]):**
+  - Menyusun dokumen rencana kerja [2026-10-27-cloud-run-deployment.md](./plans/2026-10-27-cloud-run-deployment.md) dan keputusan arsitektur [ADR-005](./decisions/ADR-005-unified-cloud-run-deployment.md).
+  - Membangun packaging unified container multi-stage di root [Dockerfile](../Dockerfile):
+    - **Stage 1 (Frontend Builder):** Node.js 20 Alpine mengompilasi TypeScript Vite SPA, Three.js VRM engine, dan menyalin aset 3D VRM 1.0 ([`alya.vrm`](../frontend/public/models/alya.vrm) & [`bima.vrm`](../frontend/public/models/bima.vrm)) ke `/app/frontend/dist`.
+    - **Stage 2 (Runtime Container):** Python 3.12-slim-bookworm dengan Nginx 1.22, gettext-base, dan Uvicorn.
+  - Menyediakan [nginx.conf.template](../nginx.conf.template) yang mendengarkan port dinamis Cloud Run `${PORT}` (`listen ${PORT}`), menyajikan aset statis & 3D VRM dengan gzip dan caching 7 hari, me-reverse proxy `/api/v1/...` ke `127.0.0.1:8000`, serta me-reverse proxy `/ws/interview/...` ke WebSocket Uvicorn dengan `proxy_buffering off` dan timeout 3600 detik.
+  - Menyediakan [scripts/docker-entrypoint.sh](../scripts/docker-entrypoint.sh) untuk startup orchestration, polling health check internal, auto-seeding kandidat *Nixon Daniel — Data Platform & AI Systems Engineer* via [scripts/seed_demo_session.py](../scripts/seed_demo_session.py), dan eksekusi Nginx di foreground.
+  - Memfilter file build via [.dockerignore](../.dockerignore) dan [.gcloudignore](../.gcloudignore).
+  - Melakukan deployment sukses ke Google Cloud Run via `gcloud run deploy ai-interviewer`:
+    - **Service:** `ai-interviewer` (Revision: `ai-interviewer-00001-mlh`)
+    - **Region:** `asia-southeast2` (Jakarta)
+    - **Live Production URL:** `https://ai-interviewer-800933197735.asia-southeast2.run.app`
+    - **Health Check Status:** `{"status":"healthy","version":"1.0.0","database_connected":true,"gemini_configured":true,"active_ws_sessions":0}`
+    - **Auto-Seeded Sesi:** `ses_01m5y5ay5fjtaknnx9z3r5v6ax` (Kandidat: Nixon Daniel, Smartnet Magna Global).
+  - Memperbarui knowledge graph via `graphify update .` (1,304 nodes, 2,737 edges, 83 communities).
 - **2026-10-27 (Session 12 — Fix Multi-Turn AI Voice Playback (`NO_INTERRUPTION` + Mute VAD Flush), 3D VRM 1.0 Standard PBR Material Conversion & Strict ID/EN Language Lock [COMPLETED]):**
   - Menyusun rencana dan hasil investigasi di [2026-10-27-fix-avatar-visibility-and-language-lock.md](./plans/2026-10-27-fix-avatar-visibility-and-language-lock.md).
   - **Perbaikan Suara AI Hilang Setelah Giliran Ke-2 (Termasuk Saat Kandidat Mute Mikrofon):**
