@@ -36,9 +36,9 @@
     "semantic_hash": "64c763af45a5c0c80e072649ee5570c6"
   },
   "docs/STATE.md": {
-    "mtime": 1793082945.7076244,
-    "seen": 1793087372.9858837,
-    "ast_hash": "0df9aa343df448352965169eaabe430a",
+    "mtime": 1793087434.3243375,
+    "seen": 1793089239.0253806,
+    "ast_hash": "875edd2f192e9276a5d2956c92f17930",
     "semantic_hash": ""
   },
   "docs/contracts/README.md": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/CandidateLobbyPage.tsx": {
-    "mtime": 1793080288.5683162,
-    "seen": 1793080382.5993881,
-    "ast_hash": "ef84d04efb301261108b5a8aaca640be",
+    "mtime": 1793088053.6545131,
+    "seen": 1793089239.0253103,
+    "ast_hash": "6569b6be976887d501d6a96b0e8d9279",
     "semantic_hash": ""
   },
   "frontend/src/pages/EvaluationReportPage.tsx": {
@@ -210,15 +210,15 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/InterviewRoomPage.tsx": {
-    "mtime": 1793082826.9531274,
-    "seen": 1793082897.5522203,
-    "ast_hash": "36df7b4d3d07dfa98fa262dc35a51069",
+    "mtime": 1793088132.7643793,
+    "seen": 1793089239.0253162,
+    "ast_hash": "a1e53e7d7143484409157641bd9af067",
     "semantic_hash": ""
   },
   "frontend/src/pages/RecruiterDashboardPage.tsx": {
-    "mtime": 1793068461.921683,
-    "seen": 1793068745.9056337,
-    "ast_hash": "d53cfc7f7923b768af8c5daa860ffc15",
+    "mtime": 1793088037.7661366,
+    "seen": 1793089239.0253186,
+    "ast_hash": "957d0043d28aa2c1f6f9b9edda636eaf",
     "semantic_hash": ""
   },
   "frontend/src/pages/RecruiterSetupPage.tsx": {
@@ -228,9 +228,9 @@
     "semantic_hash": ""
   },
   "frontend/src/services/apiClient.ts": {
-    "mtime": 1793076854.6295722,
-    "seen": 1793077041.3600342,
-    "ast_hash": "ad14f0f1431b92e380b36fa5d41a0507",
+    "mtime": 1793088012.5415378,
+    "seen": 1793089239.025325,
+    "ast_hash": "a2ba2f0f1f29af2a3007ecacc0b73ba2",
     "semantic_hash": ""
   },
   "frontend/src/services/simulator/MockInterviewHarness.ts": {
@@ -246,9 +246,9 @@
     "semantic_hash": ""
   },
   "frontend/src/services/wsClient.ts": {
-    "mtime": 1793073140.9410625,
-    "seen": 1793073215.2995055,
-    "ast_hash": "f6f3629455d6dcbf9977e4184eeebaeb",
+    "mtime": 1793088146.8927112,
+    "seen": 1793089239.0253332,
+    "ast_hash": "2a225ae47a09a1e917870f136450bb7e",
     "semantic_hash": ""
   },
   "frontend/src/store/useInterviewStore.ts": {
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "frontend/src/types/api.types.ts": {
-    "mtime": 1793024757.796123,
-    "seen": 1793026795.7785695,
-    "ast_hash": "6c3ac20b81ce9dd8b755e0e69c1d4961",
+    "mtime": 1793087978.8567352,
+    "seen": 1793089239.0253375,
+    "ast_hash": "1e848b0ad777eab396ff555d23890ac9",
     "semantic_hash": ""
   },
   "frontend/src/types/ws.types.ts": {
@@ -336,9 +336,9 @@
     "semantic_hash": ""
   },
   "backend/app/api/v1/sessions.py": {
-    "mtime": 1793028220.5144453,
-    "seen": 1793044372.2758207,
-    "ast_hash": "f88358cf219f3aff07dc5dc7e1fb8014",
+    "mtime": 1793088968.7075953,
+    "seen": 1793089239.025198,
+    "ast_hash": "e773e561482820b76d3157a9007fc715",
     "semantic_hash": ""
   },
   "backend/app/config.py": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "backend/app/db/session.py": {
-    "mtime": 1793043966.087778,
-    "seen": 1793044372.2758336,
-    "ast_hash": "67eaec25e711ee2cec39b3c36e926beb",
+    "mtime": 1793088546.0139606,
+    "seen": 1793089239.0252173,
+    "ast_hash": "ff30a49059167635f83e1578e2408843",
     "semantic_hash": ""
   },
   "backend/app/main.py": {
@@ -402,9 +402,9 @@
     "semantic_hash": ""
   },
   "backend/app/schemas/api_schemas.py": {
-    "mtime": 1793043966.0717778,
-    "seen": 1793044372.2758384,
-    "ast_hash": "829067461fb5b10a9c46194c93314648",
+    "mtime": 1793087936.5237224,
+    "seen": 1793089239.0252247,
+    "ast_hash": "a95cad1727f886b89085f7e5d8a55966",
     "semantic_hash": ""
   },
   "backend/app/schemas/evaluation.py": {
@@ -672,9 +672,9 @@
     "semantic_hash": ""
   },
   "scripts/docker-entrypoint.sh": {
-    "mtime": 1793086583.269148,
-    "seen": 1793087372.9858503,
-    "ast_hash": "d5c41f0f29bcd68774236118fcf6109a",
+    "mtime": 1793088531.8776362,
+    "seen": 1793089239.0253482,
+    "ast_hash": "75eca417597fd4eb59f64255d07b4171",
     "semantic_hash": ""
   },
   "scripts/seed_demo_session.py": {
@@ -690,9 +690,15 @@
     "semantic_hash": ""
   },
   "docs/plans/2026-10-27-cloud-run-deployment.md": {
-    "mtime": 1793086274.7020278,
-    "seen": 1793087372.9859195,
-    "ast_hash": "eb5b87ae024dcb57c5ad891113cf01c4",
+    "mtime": 1793087389.423333,
+    "seen": 1793089239.0254173,
+    "ast_hash": "7f39a1572e21457e73b7aa4cd1f6da07",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-10-27-fix-cloud-run-token-routing-and-live-api.md": {
+    "mtime": 1793087916.355238,
+    "seen": 1793089239.0254235,
+    "ast_hash": "a211cf2d86c7fe83c83cf33bf980465f",
     "semantic_hash": ""
   }
 }

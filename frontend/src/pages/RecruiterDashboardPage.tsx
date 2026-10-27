@@ -275,7 +275,14 @@ export const RecruiterDashboardPage: React.FC = () => {
                     <td className="px-5 py-4 text-right">
                       <div className="flex items-center justify-end gap-2">
                         <Link
-                          to={`/interview/${item.session_id}/lobby`}
+                          to={
+                            item.candidate_join_url ||
+                            `/interview/${item.session_id}/lobby${
+                              item.candidate_token
+                                ? `?token=${encodeURIComponent(item.candidate_token)}`
+                                : ''
+                            }`
+                          }
                           className="inline-flex items-center gap-1 rounded-xl border border-subtle bg-surface px-3 py-1.5 text-xs font-semibold text-charcoal transition hover:bg-subtle/60"
                           title="Buka Persiapan Kandidat"
                         >
@@ -284,7 +291,11 @@ export const RecruiterDashboardPage: React.FC = () => {
                         </Link>
 
                         <Link
-                          to={`/interview/${item.session_id}/room`}
+                          to={`/interview/${item.session_id}/room${
+                            item.candidate_token
+                              ? `?token=${encodeURIComponent(item.candidate_token)}`
+                              : ''
+                          }`}
                           className="inline-flex items-center gap-1 rounded-xl border border-subtle bg-canvas px-3 py-1.5 text-xs font-semibold text-charcoal transition hover:bg-surface"
                           title="Buka Ruang Wawancara"
                         >

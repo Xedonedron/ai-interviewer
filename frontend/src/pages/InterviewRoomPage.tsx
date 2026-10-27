@@ -7,7 +7,7 @@ import {
 } from '../engine/audio/MicCaptureManager';
 import { PcmStreamPlayer } from '../engine/audio/PcmStreamPlayer';
 import { VrmAvatarEngine } from '../engine/vrm/VrmAvatarEngine';
-import { apiClient } from '../services/apiClient';
+import { apiClient, cacheSessionToken, resolveSessionToken } from '../services/apiClient';
 import { InterviewWsClient } from '../services/wsClient';
 import { useInterviewStore } from '../store/useInterviewStore';
 import type { InterviewStageId } from '../types/api.types';
@@ -41,7 +41,10 @@ export const InterviewRoomPage: React.FC = () => {
     sessionId: string;
   }>();
   const [searchParams] = useSearchParams();
-  const token = searchParams.get('token') ?? 'sim_ws_token';
+  const queryToken = searchParams.get('token');
+  const [activeToken, setActiveToken] = useState<string>(
+    () => queryToken || resolveSessionToken(sessionId) || '',
+  );
   const navigate = useNavigate();
 
   const sessionMetadata = useInterviewStore((s) => s.sessionMetadata);
@@ -132,9 +135,15 @@ export const InterviewRoomPage: React.FC = () => {
 
     if (!sessionMetadata) {
       apiClient
-        .getCandidateSessionMetadata(sessionId, token)
+        .getCandidateSessionMetadata(sessionId, activeToken || queryToken || undefined)
         .then((meta) => {
-          if (mounted) setSessionMetadata(meta);
+          if (mounted) {
+            setSessionMetadata(meta);
+            if (meta.candidate_token && !activeToken) {
+              setActiveToken(meta.candidate_token);
+              cacheSessionToken(sessionId, meta.candidate_token);
+            }
+          }
         })
         .catch(() => {
           // Ignore error in standalone mode
@@ -193,9 +202,9 @@ export const InterviewRoomPage: React.FC = () => {
           break;
         }
         case 'session.completed': {
-          navigate(
-            `/interview/${sessionId}/completed?token=${encodeURIComponent(token)}`,
-          );
+          const navToken = activeToken || queryToken || '';
+          const qs = navToken ? `?token=${encodeURIComponent(navToken)}` : '';
+          navigate(`/interview/${sessionId}/completed${qs}`);
           break;
         }
         default:
@@ -203,7 +212,9 @@ export const InterviewRoomPage: React.FC = () => {
       }
     };
 
-    const wsClient = new InterviewWsClient(sessionId, token, {
+    const resolvedInitialToken =
+      activeToken || resolveSessionToken(sessionId) || queryToken || '';
+    const wsClient = new InterviewWsClient(sessionId, resolvedInitialToken, {
       onControlFrame: handleControlFrame,
       onBinaryPcm24kFrame: (pcmBuffer) => {
         if (!mounted || !pcmPlayerRef.current) return;
@@ -334,7 +345,7 @@ export const InterviewRoomPage: React.FC = () => {
       vrmEngineRef.current?.dispose();
       vrmEngineRef.current = null;
     };
-  }, [sessionId, token]);
+  }, [sessionId]);
 
   // Reload VRM model when sessionMetadata arrives or when user switches VRM model
   useEffect(() => {
@@ -452,10 +463,10 @@ export const InterviewRoomPage: React.FC = () => {
     setConfirmEndOpen(false);
     setEndingSession(true);
     wsClientRef.current?.sendEndSession('candidate_finished');
+    const navToken = activeToken || queryToken || '';
+    const qs = navToken ? `?token=${encodeURIComponent(navToken)}` : '';
     setTimeout(() => {
-      navigate(
-        `/interview/${sessionId}/completed?token=${encodeURIComponent(token)}`,
-      );
+      navigate(`/interview/${sessionId}/completed${qs}`);
     }, 250);
   };
 

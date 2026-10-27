@@ -10,7 +10,7 @@ import {
   Volume2,
   Wifi,
 } from 'lucide-react';
-import { apiClient } from '../services/apiClient';
+import { apiClient, resolveSessionToken } from '../services/apiClient';
 import {
   computeFrameRms,
   mapRmsToMicLevelPct,
@@ -317,7 +317,8 @@ export const CandidateLobbyPage: React.FC = () => {
       return;
     }
     setConsentError(false);
-    const qs = token ? `?token=${encodeURIComponent(token)}` : '';
+    const activeToken = token || resolveSessionToken(sessionId) || '';
+    const qs = activeToken ? `?token=${encodeURIComponent(activeToken)}` : '';
     navigate(`/interview/${sessionId}/room${qs}`);
   };
 

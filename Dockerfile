@@ -50,6 +50,9 @@ COPY backend/app /app/backend/app
 COPY nginx.conf.template /app/nginx.conf.template
 COPY scripts /app/scripts
 
+# Ensure SQLite storage directory exists
+RUN mkdir -p /app/data
+
 # Copy compiled frontend SPA from Stage 1 into Nginx web root
 COPY --from=frontend-builder /app/frontend/dist /usr/share/nginx/html
 

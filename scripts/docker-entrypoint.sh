@@ -10,6 +10,7 @@ PORT="${PORT:-8080}"
 echo "[entrypoint] Initializing Unified AI Interviewer container on port ${PORT}..."
 
 # 1. Substitute dynamic Cloud Run $PORT into Nginx configuration
+mkdir -p /app/data
 rm -f /etc/nginx/sites-enabled/default || true
 envsubst '${PORT}' < /app/nginx.conf.template > /etc/nginx/conf.d/default.conf
 

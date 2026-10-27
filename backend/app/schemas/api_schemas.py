@@ -121,6 +121,8 @@ class SessionListItemDto(BaseModel):
     duration_seconds: int
     overall_weighted_score: float | None = None
     hiring_recommendation: HiringRecommendation | None = None
+    candidate_join_url: str | None = None
+    candidate_token: str | None = None
     started_at: str | None = None
     completed_at: str | None = None
     created_at: str
@@ -168,6 +170,7 @@ class CandidateSessionMetadataResponse(BaseModel):
     last_turn_seq: int
     ws_endpoint_url: str
     stages: list[InterviewStageInfoDto]
+    candidate_token: str | None = None
 
 
 class CompleteSessionRequest(BaseModel):

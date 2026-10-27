@@ -17,6 +17,16 @@ from app.db.base import Base
 
 settings = get_settings()
 
+# If SQLite is used with a file path, ensure parent directory exists
+if "sqlite" in settings.database_url:
+    try:
+        from pathlib import Path
+        db_file = settings.database_url.split(":///")[-1]
+        if db_file and not db_file.startswith(":memory:"):
+            Path(db_file).parent.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        pass
+
 engine: AsyncEngine = create_async_engine(
     settings.database_url,
     echo=False,

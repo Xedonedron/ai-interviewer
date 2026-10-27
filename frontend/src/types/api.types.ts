@@ -140,6 +140,8 @@ export interface SessionListItemDto {
   duration_seconds: number;
   overall_weighted_score: number | null;
   hiring_recommendation: HiringRecommendation | null;
+  candidate_join_url?: string;
+  candidate_token?: string;
   started_at: string | null;
   completed_at: string | null;
   created_at: string;
@@ -176,6 +178,7 @@ export interface CandidateSessionMetadataResponse {
   last_turn_seq: number;
   ws_endpoint_url: string;
   stages: InterviewStageInfoDto[];
+  candidate_token?: string;
 }
 
 export interface CompleteSessionRequest {

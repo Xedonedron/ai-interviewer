@@ -246,7 +246,7 @@ export const apiClient = {
     if (params?.offset) query.set('offset', String(params.offset));
     const qs = query.toString() ? `?${query.toString()}` : '';
 
-    return fetchWithMockFallback(`/api/v1/sessions${qs}`, { method: 'GET' }, () => {
+    const res = await fetchWithMockFallback(`/api/v1/sessions${qs}`, { method: 'GET' }, () => {
       const filtered = params?.status
         ? runtimeSessionsList.filter((item) => item.status === params.status)
         : runtimeSessionsList;
@@ -257,6 +257,13 @@ export const apiClient = {
         offset: params?.offset ?? 0,
       };
     });
+
+    for (const item of res.items) {
+      if (item.candidate_token) {
+        cacheSessionToken(item.session_id, item.candidate_token);
+      }
+    }
+    return res;
   },
 
   /**
@@ -267,7 +274,7 @@ export const apiClient = {
     token?: string,
   ): Promise<CandidateSessionMetadataResponse> {
     const resolvedToken = resolveSessionToken(sessionId, token);
-    return fetchWithMockFallback(
+    const meta = await fetchWithMockFallback(
       `/api/v1/sessions/${sessionId}`,
       {
         method: 'GET',
@@ -283,6 +290,11 @@ export const apiClient = {
         };
       },
     );
+
+    if (meta.candidate_token) {
+      cacheSessionToken(sessionId, meta.candidate_token);
+    }
+    return meta;
   },
 
   /**

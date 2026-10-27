@@ -186,6 +186,12 @@ async def list_sessions(
             if s.evaluation_report is not None
             else None
         )
+        session_token = create_ephemeral_session_token(
+            session_id=s.id,
+            jti=s.ephemeral_token_jti,
+        ).token
+        candidate_join_url = f"/interview/{s.id}/lobby?token={session_token}"
+
         items.append(
             SessionListItemDto(
                 session_id=s.id,
@@ -201,6 +207,8 @@ async def list_sessions(
                 duration_seconds=s.duration_seconds,
                 overall_weighted_score=overall_score,
                 hiring_recommendation=hiring_rec,
+                candidate_join_url=candidate_join_url,
+                candidate_token=session_token,
                 started_at=_to_iso_z(s.started_at),
                 completed_at=_to_iso_z(s.completed_at),
                 created_at=_to_iso_z(s.created_at) or "",
@@ -249,6 +257,10 @@ async def get_session_metadata(
     host = request.headers.get("host") or "localhost:8000"
     ws_scheme = "wss" if request.url.scheme == "https" else "ws"
     ws_endpoint_url = f"{ws_scheme}://{host}/ws/interview/{session.id}"
+    candidate_token = create_ephemeral_session_token(
+        session_id=session.id,
+        jti=session.ephemeral_token_jti,
+    ).token
 
     return CandidateSessionMetadataResponse(
         session_id=session.id,
@@ -268,6 +280,7 @@ async def get_session_metadata(
         last_turn_seq=session.last_turn_seq,
         ws_endpoint_url=ws_endpoint_url,
         stages=stages,
+        candidate_token=candidate_token,
     )
 
 

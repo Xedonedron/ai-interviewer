@@ -57,9 +57,7 @@ export class InterviewWsClient {
     const resolved = resolveSessionToken(sessionId, token);
     this.token = resolved ?? token;
     this.callbacks = callbacks;
-    this.useMock =
-      forceMock ??
-      (isSimulatorModeEnabled() || (!resolved && token === 'sim_ws_token'));
+    this.useMock = forceMock ?? isSimulatorModeEnabled();
   }
 
   public connect(resumeFromTurnSeq = this.lastTurnSeq): void {
@@ -71,9 +69,11 @@ export class InterviewWsClient {
       return;
     }
 
+    // Refresh token from cache if available before opening live WebSocket
+    const activeToken = resolveSessionToken(this.sessionId, this.token) ?? this.token;
     const baseUrl = getWsBaseUrl();
     const url = `${baseUrl}/ws/interview/${this.sessionId}?token=${encodeURIComponent(
-      this.token,
+      activeToken,
     )}`;
 
     try {
